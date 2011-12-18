@@ -1,0 +1,67 @@
+--- 
+layout: post
+title: Notes on Data Catalogue Federation
+published: true
+meta: 
+  _edit_last: "1"
+  _edit_lock: "1303477384"
+tags: []
+
+type: post
+status: publish
+---
+Over the past six months, I've been involved in the LOD2 projects use case for open government data, an effort to prototype a data catalogue federation platform for data from within the European Union. On May 3/4, OKF will be running a workshop on the same topic in Edinburgh. As I won't be able to attend it, here are some notes on requirements and technical alternatives (perhaps as a "scene setter") for the meeting.
+
+<strong>Purpose, Objectives</strong>
+
+The interest in exchanging catalogue metadata can be explained through various use cases, some of which include:
+<ul>
+	<li>The aggregation of metadata across hierarchies, for example from regional government catalogues towards state and trans-national (EU) levels of administration. This can also be applied within government, where several department catalogues might be aggregated into a common database.</li>
+	<li>Domain-specific catalogues might cover only specific types of content or data format, e.g. data on scientific, financial or legal documents. Still, they might want to retrieve metadata from more generic catalogues or provide updated dataset descriptions upstream.</li>
+	<li>Another common scenario is the interface between institutionally operated catalogues (such as government sites) and those operated from within a civic context: while government has much better information on updates of data and similar source information, the community may be abe to contribute better knowledge on re-use opportunities, examples or fully established workflows. As it is not easy for government to allow the direct and wiki-like enrichment of metadata, this enrichment could be done in an external, community-driven catalogue (such as CKAN.net) and then fed back into the main catalogue through a guided process.</li>
+	<li>Aside from many use cases for full metadata, the centralization of access points in the form of search federation can support users in finding the right information without having to find the right search box first.</li>
+</ul>
+These use cases motivate the exchange of metadata, in order to allow widespread re-use of metadata, make specific capacities of different catalogues available to each other and  to guarantee up-to-date information in data catalogues. The following is a somewhat random list of issues that need addressing for such exchange and federation to yield useful results.
+
+<strong>Scope and basic concepts of catalogues</strong>
+
+As with almost any other technology, various people expect and implement data catalogues to do many different and often mutually exclusive things. Any kind of exchange mechanism will have to bridge at least some of these gaps:
+<ul>
+	<li>The first aspect may be the granularity of data referenced from within the catalogue. A particularly plastic example is bibliographic information where one might reference the whole database or each individual work. This is also true of statistical databases and, in particular, geospatial information. In the case of the US data.gov portal, 3000-odd normal datasets are met by 290000 pieces of geographic information. Trying to define a dataset (in Richard Cyganiak's words: "a set of data") is probably not helpful, perhaps marking packages as large, medium or small would be more practical.</li>
+	<li>A second aspect is the scope of the involved sites. While we're talking about data catalogues (as opposed to repositories) for the most part, this distinction is soft and often not of great help. Many catalogues (such as Data Publica, Socrata) include the data itself, some even standardize on a specific format. Including those also means looking at actual data stores which provide metadata, i.e. sites like Talis, FreeBase, Google Public Data and other statistics databases.</li>
+	<li>Exchanges will have to be aware of licensing both of the datasets referenced or contained within the catalogue and of the metadata itself. A government catalogue may only contain open data and release its metadata into the public domain, while a data mart would also contain commercial data and claim DB rights on their index. While I'm not sure we need to support machine-provided assessments of compatibility, having markers for some key pieces of information (BY, SA, NC, (C), PD) would be useful.</li>
+</ul>
+<strong>Metadata Formats</strong>
+
+JSON, HTML, XML/OKFN, XML/GMC, XML/DC, RDF/DC, RDF/DCat, MARC
+
+<strong>Exchange and Harvesting Mechanisms</strong>
+
+Push or pull?
+
+OAI-PMH, CSW et al., RSS/Atom, RDFa, SDMX,
+DVCS (Git, Mercurial, Bazaar)
+SPARQL or specific (RESTish or RPC-type/SOAP) interfaces
+
+Best choice at the moment is possibly the Atom Publishing Protocol as it is widely understood, implemented, tested.
+
+<strong>Distribution of Changes</strong>
+
+Given both an exchange format and a mechanism for harvesting or pushing metadata, the possibility to merge divergent metadata must be created. I also think its helpful to tackle the question of metadata provenance in this context, rather than as an isolated and theoretical concept. This involves:
+<ul>
+	<li>Establishing and documenting institutional workflows for the processing of external or internal changes to metadata in a distributed environment.</li>
+	<li>Matching equivalent or related datasets from different sources, merging them or expressing relationships between them; deciding on a threshold for the distinction.</li>
+	<li>Exposing and merging differentials to data catalogue maintainers through a user interface to allow manual or guided  reconciliation in a reproducible way.</li>
+	<li>Tracking technical metadata provenance across different systems, some of which may have their own concepts of versioning and tracking; recording the process of exchange and chains of sources.</li>
+</ul>
+<strong>Alignment of Metadata</strong>
+
+Once a basic architecture for federation is available, more effort can be invested into the creation of common metadata contents. Challenges here include:
+<ul>
+	<li>Expressing advanced dataset relations and types such as time series and derived datasets.</li>
+	<li>Using common tagging schemes, and taxonomies. Especially for basic concepts where EUROVOC might be useful and then in a per-domain fashion. We should also give thought to how this can benefit form the kind of work that is being done on SEMIC. In LOD2, we've basically decided to focus on three content domains: energy-related datasets, financial spending and budgetary data and legislative documents.</li>
+	<li>Geo-spatial relationships, scope and context.</li>
+	<li>Institutional origin (incl. URIs for public bodies, companies) and paths of publication, including responsible persons.</li>
+	<li>Handling of languages and translations, Licensing and usage rights criteria, see above.</li>
+	<li>For outbound references, advanced URL schemes, data format conventions and specifications for external services such as SPARQL endpoints, REST/SOAP/XML-PRC APIs etc.</li>
+</ul>

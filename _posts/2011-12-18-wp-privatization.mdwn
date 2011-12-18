@@ -1,0 +1,31 @@
+---
+layout: post
+title: World-wide privatizations collected by the World Bank
+---
+
+The World Bank [has collected](http://rru.worldbank.org/Privatization/) a database of major (i.e. at least one 
+million USD) privatizations in developing countries from 1988 
+to 2008. The dataset -  which is classified by country, sector and 
+privatization type - is a fascinating view into the development of 
+countries such as China, Russia and many states in South America.
+
+I've [imported this dataset into OpenSpending](http://openspending.org/wb-privatizations) 
+to be able to generate custom aggregates. This is of course risky, 
+as the list is unlikely to be comprehensive and does not include 
+smaller privatizations on a local level, which are likely to make up 
+the bulk of the financial volume. 
+
+Some interesting views include the breakdown [by sector](http://openspending.org/wb-privatizations/sector)
+and [by nation](http://openspending.org/wb-privatizations/from). But the import into 
+OpenSpending is problematic in other ways: the dataset does not contain information on 
+who bought the privatized entities and therefore isn't a generic spending dataset. 
+
+I've therefore decided to model it in a reverse mode. The individual entries do 
+not represent financial transactions but the transferred assets - the source is 
+given as the source country, while the recipient is the newly formed company. 
+This may be an interesting preview into the problems OpenSpending will face as 
+it begins to include balance sheet information.
+
+
+
+

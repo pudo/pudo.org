@@ -1,0 +1,75 @@
+--- 
+layout: post
+title: Non-coder tool chain for data work
+published: false
+meta: 
+  _edit_lock: "1310997206"
+  _edit_last: "1"
+tags: []
+
+type: post
+status: draft
+---
+This post assembles some notes from the workshop "Data discovery, acquisition and re-use" that Jonathan and I held at a recent OSI capacity building event in Budapest, Hungary. In it, we're going through some useful technologies and techniques for non-coders.
+
+<strong>Data ecosystems</strong>
+
+When you start working on any kind of data, there are some questions that need to be asked beforehand: Will I be the only one working on this data? Will I have to use data coming from multiple sources? Does the data need to be updated regularly? Can resulting or refined data be shared with others to enable participation, encourage other viewpoints and uses or to substantiate conclusions derived from the data?
+
+If the answer to any of these questions is "yes", then some thought has to be given to the ecosystem within which the data will live. This includes thinking about openly licensing the data and sharing it in a machine-readable format along with any derived visualization, reporting or commentary. Further, proper documentation, tracking of changes to the data and the availability of data in public catalogues become a concern.
+
+The goal here is to start thinking about data work as a repeatable, mostly automated process that is different from the one-time gathering and mangling of data. A particular anti-pattern that deserves mention here is the "Excel afternoon", where people fix up data manually without a clear trail of what has been added, subtracted and changed.
+
+To help with this, several kinds of tools are available:
+<ul>
+	<li>Data catalogues like CKAN help to keep an overview of what dataset are available, and what the licensing conditions and technical representations available are.</li>
+	<li>Version control systems such as Subversion, Git and Mercurial are used by developers to keep track of code changes but can also be used to revision smaller datasets such as CSV files or text documents.</li>
+</ul>
+<strong>Data acquisition</strong>
+
+There is an infinite number of ways to acquire data, but our focus here will be on government information. As a rough overview of acquisition paths, the following scheme might be useful:
+<table border="1">
+<tbody>
+<tr>
+<th></th>
+<th>Voluntary release</th>
+<th>Involuntary release</th>
+</tr>
+<tr>
+<th>Active acquisition</th>
+<td>Freedom of Information requests</td>
+<td>Scraping and extraction</td>
+</tr>
+<tr>
+<th>Passive acquisition</th>
+<td>Public sector information, Open Data</td>
+<td>Leaked information</td>
+</tr>
+</tbody>
+</table>
+And while leaks have received a lot of attention lately, building a sustainable flow of information required for long-term transparency must be based on other methods: open data in the best case, although sometimes a technical approach to government in the form of scraping or PDF extraction is necessary to establish a first path of access.
+
+When scraping is used, a number of tools can be helpful:
+<ul>
+	<li>Browser Extensions like Chrome's "Scraper" can be used to test machine extraction in a low-key fashion, with results written directly to Google Spreadsheets.</li>
+	<li>A little knowledge of the Python programming language is extremely useful: the lingua franca of scraping has many useful tools such as BeautifulSoup and lxml.</li>
+	<li>ScraperWiki is a great tool to run Python, PHP and Ruby scraping scripts in regular intervals, cooperatively edit them over the web and to store the results.</li>
+	<li>NoSQL databases such as MongoDB are a good way to store the semi-structured, semi-cleansed data that is often emitted from scraping in order to go through it in more detail later.</li>
+</ul>
+<strong>Textual data</strong>
+
+....
+
+<strong>Numeric data</strong>
+
+.....
+
+<strong>Network data</strong>
+
+....
+
+<strong>Geodata</strong>
+
+Another interesting class of data is geographic information: since tools like Google Maps and OpenStreetMap have started to provide simple and flexible ways to plot some points on a map, many interesting applications have been based on mapping data. However, dealing with geographic information remains a discipline of its own that is well worth exploring but exceeds the bounds of this post.
+
+So if you have data that could be explained geographically (i.e. containing geo coordinates, boxes, city or country names or even addresses), be aware that there is more than just Google markers and get in touch with your local OpenStreetMap community!

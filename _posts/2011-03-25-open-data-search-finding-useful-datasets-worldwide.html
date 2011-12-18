@@ -1,0 +1,21 @@
+--- 
+layout: post
+title: "Open Data Search: finding useful datasets, worldwide"
+published: true
+meta: 
+  _edit_lock: "1301043690"
+  _edit_last: "1"
+  _wp_old_slug: ""
+tags: []
+
+type: post
+status: publish
+---
+Recently, there has hardly been a week in which there hasn't been an announcement of a new local, regional or national open data initiative - including ever more extensive catalogues of data that is being opened up (<a href="http://ckan.org">CKAN</a> alone now runs in 20 or more places). While this is great news for those of us interested in re-using the data, it also means it becomes increasingly hard to keep a good overview of what kind of data are available for which places. To get a better overview we've now started a meta search engine for open data, <a href="http://opendatasearch.org">opendatasearch.org</a>.
+<div><a href="http://opendatasearch.org/"><img src="http://farm6.static.flickr.com/5052/5533310616_7ddf06acf5.jpg" alt="" /></a></div>
+<div></div>
+<a href="http://opendatasearch.org">opendatasearch.org</a> is a global version of the prototype <a href="http://publicdata.eu">publicdata.eu</a> site we <a href="http://lod2.okfn.org/2011/01/27/alpha-prototype-of-publicdata-eu-is-now-live/">announced</a> in January: it's an aggregator for datasets, providing a simple and unified search interface to all of the catalogues contained. At the moment, this includes all <a href="http://wiki.ckan.net/Instances">known instances of the CKAN software</a>, the Sunlight Foundation's <a href="http://nationaldatacatalog.com/">National Data Catalog</a> (and with it a large number of US-based data sources), the <a href="http://data.worldbank.org/data-catalog">World Bank data catalogue</a>, Sweden's DCat-enabled <a href="http://www.opengov.se/">OpenGov.se</a> and Nexedi's <a href="http://www.data-publica.com/">Data Publica</a> portal. We've also put up <a href="http://search.ckan.net/">search.ckan.net</a> which provides access to the combined index of all CKANs only.
+
+Behind the scenes, opendatasearch.org is web spider with a twist: all collected data is converted to <a href="http://www.w3.org/egov/wiki/Data_Catalog_Vocabulary">DCat</a>, DERI/W3C's RDF-based ontology for dataset descriptions. While this convention is still in <a href="http://www.w3.org/egov/IG/track/products/19">early development</a>, it's interesting to see how well different kinds of catalogues can be expressed in it already (the harvested data can be <a href="http://rdf.opendatasearch.org/">found here</a>). By harvesting a growing set of existing dataset descriptions, we hope to gather a comprehensive picture of the dataset properties that are widely used and that should be represented in a common format. Our goal with this is to establish some degree of interoperability between different data catalogues, <a href="http://lod2.okfn.org/2011/01/11/publicdata-eu-what-is-it-and-why-are-we-building-it/">leading into a federated catalogue architecture for Europe</a> and perhaps beyond.
+
+These standardization concerns aside, we want to make opendatasearch.org useful on its own. For the <a href="http://trac.ckan.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;component=lod2&amp;order=priority&amp;col=id&amp;col=summary&amp;col=status&amp;col=type&amp;col=priority&amp;col=milestone&amp;col=component&amp;report=13">immediate future</a> this means adding support for more filter options, including licenses (and their compliance to open data principles), languages used in metadata and the data itself and geographic scopes of the collected information. This, of course, is an open <a href="https://bitbucket.org/okfn/dcat-tools">source</a> development effort and we'd glad to welcome those interested in contributing comments, catalogue data or functionality on the <a href="http://lists.okfn.org/mailman/listinfo/ckan-discuss">ckan-discuss</a> mailing list!

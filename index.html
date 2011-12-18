@@ -1,0 +1,33 @@
+---
+layout: default
+title: Friedrich Lindenberg
+---
+
+<div id="home">
+  <p class="tagline">I'm an open government enthusiast, data wrangler and web coder.</p>
+
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+  
+  <h1>Projects</h1>
+  <ul class="posts">
+    <li><a href="http://offenedaten.de/">OffeneDaten:</a> portal for German open data sources.</li>
+    <li><a href="http://openspending.org/">OpenSpending:</a> Tracking international government finance.</li>
+    <li><a href="http://adhocracy.de/">Adhocracy:</a> A distributed policy drafting and decision-making platform.</li>
+    <li><a href="http://bund.offenerhaushalt.de/">OffenerHaushalt:</a> German federal budget visualization.</li>
+    <li><a href="http://publicdata.eu/">PublicData:</a> federated search engine for European data sets.</li>
+  </ul>
+  
+  <h1>Experiment &amp; Hacks</h1>
+  <ul class="posts">
+    <li><a href="http://yourtopia.net/">YourTopia:</a> voting on a custom index for human development criteria.</li>
+    <li><a href="http://mitzeichner.pudo.org/">Mitzeichner:</a> reverse lookup for petition signatories at the German parliament.</li>
+  </ul>
+
+  <h1>Code &amp; Data Repositories</h1>
+</div>
