@@ -6,7 +6,7 @@ title: Friedrich Lindenberg
 <div id="home">
   <p class="tagline">I'm an open government enthusiast, data wrangler and web coder.</p>
 
-  <h1>Blog Posts</h1>
+  <h1>Blog Posts <a href="atom.xml"><img src="images/rss.png"></a></h1>
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
