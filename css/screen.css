@@ -203,3 +203,8 @@ p.tagline {
   #related h2 {
     margin-bottom: 1em;
   }
+
+blockquote {
+  margin-left: 1em;
+  color: #666;
+}
