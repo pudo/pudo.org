@@ -30,7 +30,8 @@ are now [running for office](http://piratenpartei.de). While this is an interest
 As a demonstration of the kinds of tools needed, I spent a lot of time in October 
 and January trying to to productize [OffenesParlament](http://offenesparlament.de), a legislative tracking site for the federal parliament. It allows citizens to easily 
 search parliamentary business, speeches and to subscribe to updates about a specific 
-topic or politician. The site has recently entered [entered its beta phase](http://okfn.de/2012/05/offenesparlament/) and we're now actively seeking more coders to help with the development.
+topic or politician. The site has recently entered [entered its beta phase](http://okfn.de/2012/05/offenesparlament/) and we're now actively seeking more coders to help with 
+further development.
 
 But software along is not enough, so together with [fukami](http://foo.io) and the
 support of various NGOs ([OKFN](http://okfn.de), [CCC](http://ccc.de), [Digitale Gesellschaft](http://digitalegesellschaft.de) and the [Open Data Network](http://opendata-network.org/)), I helped to organize a [series of hackdays](http://hackday.net/) across Germany, in [Hamburg](http://pudo.org/2012/01/16/hackday-hamburg.html), Berlin and Cologne.
