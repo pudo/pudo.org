@@ -1,13 +1,12 @@
 ---
 layout: default
-title: pudo.org
-home: true
+title: Blog posts
 ---
 
 <div class="row">
   <div class="span8">
     <ul class="entries">
-      {% for post in paginator.posts %}
+      {% for post in site.categories.blog %}
         {% include blog_post.html %}
       {% endfor %}
     </ul>

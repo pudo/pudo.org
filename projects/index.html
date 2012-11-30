@@ -1,13 +1,12 @@
 ---
 layout: default
-title: pudo.org
-home: true
+title: Projects
 ---
 
 <div class="row">
   <div class="span8">
     <ul class="entries">
-      {% for post in paginator.posts %}
+      {% for post in site.categories.projects %}
         {% include blog_post.html %}
       {% endfor %}
     </ul>
@@ -17,4 +16,5 @@ home: true
     {% include menu.html %}
   </div>
 </div>
+
 

@@ -1,0 +1,145 @@
+/*
+ * Palette:
+ *
+ * Purple: #46336B
+ * Red: #BA4B37
+ * Yellow: #F5DE14
+ * Green: #4C9923
+ * Blue: #265475 (Dark: #0f212e)
+ *
+ */
+
+html, body {
+  background-color: #fff;
+  color: #333;
+}
+
+#airlock {
+  font-size: 1.1em;
+  line-height: 1.4em;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+a {
+  color: #265475;
+}
+
+li {
+  margin: 0 0 10px;
+}
+
+a:hover, a:active {
+  color: #0f212e;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0px;
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul.entries {
+  list-style-type: none;
+  margin: 0;
+}
+
+ul.entries li.entry {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  /*background-color: #f0f0f0;*/
+  border-bottom: 1px solid #ddd;
+}
+
+ul.entries li.entry {
+  position: relative;
+}
+
+ul.entries li.entry .preview {
+  color: #999;
+}
+
+ul.entries li.entry:before {
+    content: '';
+    position: absolute;
+    bottom: 0; right: 0;
+    border-left: 30px solid white;
+    width: 0;
+}
+
+ul.entries li.entry.blog:before {
+    border-bottom: 30px solid #46336B;
+}
+
+ul.entries li.entry.projects:before {
+    border-bottom: 30px solid #BA4B37;
+}
+
+ul.entries li.entry img.image {
+  border: 10px solid #eee;
+  margin-bottom: 0.5em;
+}
+
+header {
+  /*background-color: #111;
+  color: #fff;*/
+  font-size: 3em;
+  line-height: 1.2em;
+  padding: 1em;
+}
+
+.teaser {
+  color: #999;
+  font-size: 1.2em;
+}
+
+.teaser .message {
+  margin-bottom: 1em;
+  border-bottom: 1px solid #ddd;
+}
+
+.teaser p {
+  line-height: 1.4em;
+  padding-bottom: 0.5em;
+}
+
+footer {
+  margin-top: 2em;
+  padding: 2em 0 4em 0;
+  background-color: #111;
+  color: #fff;
+
+}
+
+.facet {
+  font-size: 1.2em;
+  padding: 0.4em;
+  margin-bottom: 0.3em;
+  /*background-color: #eee;*/
+  /*color: #fff;*/
+  border-left: 20px solid;
+}
+
+.facet a {
+  color: #333;
+}
+
+.facet.posts {
+  border-color: #46336B;
+}
+
+.facet.projects {
+  border-color: #BA4B37;
+}
+
+.facet.slides {
+  border-color: #F5DE14;
+}
+
+.facet.contact {
+  border-color: #4C9923;
+}
