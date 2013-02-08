@@ -17,6 +17,8 @@ with journalists from around the world. But my interest in this goes beyond
 data as a means for storytelling. News technology is information architecture for
 the public sphere, and the web means [we'll have to completely re-think it](http://towcenter.org/research/post-industrial-journalism/).
 
+<img src="http://www.spiegelgruppe.de/spiegelgruppe/home.nsf/b60b5cd669bf4352c1256ebb00475a91/ecb7c31446e31e35c125746c0046165b/Body/0.738?OpenElement&FieldElemFormat=jpg">
+
 Of course, there's been little space for such lofty talk as I've been on a
 marathon to meet as many of the different teams at Spiegel as I could this week.
 During this, I've tremendously enjoyed joining some of the editorial meetings
