@@ -2,11 +2,11 @@
 layout: post
 author: Friedrich Lindenberg
 title: DataFreeze - scripted static data exports
-#opennews: true
-published: false
+opennews: true
+#published: false
 ---
 
-Every hour, Spiegel Online serves more than half a million visitors. To
+Every hour, [Spiegel Online](http://spiegel.de) serves more than half a million visitors. To
 make that work, all content has to be served via a CDN. For data-driven 
 applications that means: no dynamic queries can be served easily, data 
 needs to be static. This doesn't need to be a showstopper for great
@@ -21,24 +21,24 @@ included gets controlled by a Freezefile - a simple YAML or JSON file
 that specifies queries, output file names and formats. A sample
 Freezefile would look like this::
   
-  common:
+    common:
 
-    database: "postgresql://user:password@localhost/operational_database"
-    prefix: project/data/
-    format: json
+      database: "postgresql://user:password@localhost/operational_database"
+      prefix: project/data/
+      format: json
 
-  exports:
+    exports:
 
-    - query: "SELECT id, title, date FROM events"
-      filename: "index.json"
+      - query: "SELECT id, title, date FROM events"
+        filename: "index.json"
 
-    - query: "SELECT id, title, date, country FROM events"
-      filename: "countries/{{country}}.csv"
-      format: csv
+      - query: "SELECT id, title, date, country FROM events"
+        filename: "countries/{{country}}.csv"
+        format: csv
 
-    - query: "SELECT * FROM events"
-      filename: "events/{{id}}.json"
-      mode: item
+      - query: "SELECT * FROM events"
+        filename: "events/{{id}}.json"
+        mode: item
 
 Of course, all of this is not a very hard problem to solve - but
 DataFreeze does it in a clean and simple way that invites you to
