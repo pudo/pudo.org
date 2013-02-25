@@ -19,7 +19,7 @@ the creation of such applications by freezing relational data from a
 SQL database into a set of easy-to-use JSON and CSV files. What data is
 included gets controlled by a Freezefile - a simple YAML or JSON file
 that specifies queries, output file names and formats. A sample
-Freezefile would look like this::
+Freezefile would look like this:
   
     common:
 
@@ -33,11 +33,11 @@ Freezefile would look like this::
         filename: "index.json"
 
       - query: "SELECT id, title, date, country FROM events"
-        filename: "countries/{{country}}.csv"
+        filename: "countries/{{ "{{country}}" }}.csv"
         format: csv
 
       - query: "SELECT * FROM events"
-        filename: "events/{{id}}.json"
+        filename: "events/{{ "{{id}}" }}.json"
         mode: item
 
 Of course, all of this is not a very hard problem to solve - but
