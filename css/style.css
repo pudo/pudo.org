@@ -5,8 +5,8 @@
  * Red: #BA4B37
  * Yellow: #F5DE14
  * Green: #4C9923
- * Blue: #265475 (Dark: #0f212e)
- *
+ * Blue: #265475 (Dark: #08c)
+ * #0F81FE
  */
 
 html, body {
@@ -25,7 +25,7 @@ html, body {
 }
 
 a {
-  color: #265475;
+  color: #08c;
 }
 
 li {
@@ -33,7 +33,7 @@ li {
 }
 
 a:hover, a:active {
-  color: #0f212e;
+  color: #08c;
 }
 
 h1, h2, h3, h4, h5, h6 {
