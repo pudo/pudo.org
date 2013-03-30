@@ -19,7 +19,7 @@ html, body {
   line-height: 1.4em;
 }
 
-* {
+body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
