@@ -36,7 +36,7 @@ In this context, I think five aspects deserve some thought:
 
   Getting the facts is made easier by the Commission's desire to measure it's member's activity in great detail: whether the handling of [environmental affairs](http://www.eea.europa.eu/), [consumer protection](http://ec.europa.eu/consumers/dyna/rapex/rapex_archives_en.cfm) or state aid to [companies and banks](http://ec.europa.eu/competition/state_aid/overview/): the EU is the country of the ten thousand databases, in which regulation is often based on surprisingly thorough metrics (which, of course, don't always support the eventual decision). 
 
-* Tell a story. Facts can only have an impact when they are used to make a point about the real world. Understanding the EU also means understanding the technocratic language and process of Brussels. Going native in this environment is easy, especially when using a tool as complex and prone to "expertism" as data. So, more than ever, trends and patterns need to be translated into human scale and connected to the political reality of citizens.
+* **Tell a story.** Facts can only have an impact when they are used to make a point about the real world. Understanding the EU also means understanding the technocratic language and process of Brussels. Going native in this environment is easy, especially when using a tool as complex and prone to "expertism" as data. So, more than ever, trends and patterns need to be translated into human scale and connected to the political reality of citizens.
 
   Again, FarmSubsidy.org is a good example: while they were able to make a strong case for the mis-allocation of the agriculture and fisheries funds, their story of big food companies receiving heavy subsidies was not strong enough to significantly influence the political gridlock.
 
@@ -44,5 +44,7 @@ In this context, I think five aspects deserve some thought:
 
 For news organizations that don't properly cover the EU yet, it's high time to act. Still, this new environment should also be used for experimentation - with technologies, in collaborating with other organizations and in telling different types of stories.
 
-The complexity of decision-making and regulation in the EU makes these approaches necessary, but in many cases they may proove to be useful at home, too - in national parliaments and even a city government. 
+The complexity of decision-making and regulation in the EU makes these
+approaches necessary, but in many cases they may proove to be useful at
+home, too - in national politics and even a city government. 
 
