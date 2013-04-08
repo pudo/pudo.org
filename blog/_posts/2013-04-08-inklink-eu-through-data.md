@@ -4,7 +4,7 @@ author: Friedrich Lindenberg
 title: #inkLink - Exploring Europe through data
 opennews: true
 #published: false
---
+---
 
 Last weekend, [Stijn](http://stdout.be/en/) and I visited [inkLink13](http://inklink2013.wordpress.com/), where I presented a few ideas about using data to cover the European Union. The meet-up was a first encounter between Budapest's tech and journalism communities. As both groups shared some of their ideas for the future of news in Hungary, the discussion was given a special weight by the actions of the Orban government, which has shown little regard for the freedom of the press and routinely rejects requests for information.
 
