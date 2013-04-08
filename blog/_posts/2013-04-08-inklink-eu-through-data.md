@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Friedrich Lindenberg
-title: #inkLink - Exploring Europe through data
+title: Exploring Europe through data
 opennews: true
 #published: false
 ---
