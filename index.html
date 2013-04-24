@@ -1,20 +1,13 @@
 ---
-layout: default
+layout: page
 title: pudo.org
 home: true
 ---
 
-<div class="row">
-  <div class="span8">
-    <ul class="entries">
-      {% for post in paginator.posts %}
-        {% include blog_post.html %}
-      {% endfor %}
-    </ul>
-  </div>
+<ul class="entries">
+  {% for post in paginator.posts %}
+    {% include blog_post.html %}
+  {% endfor %}
+</ul>
 
-  <div class="span4">
-    {% include menu.html %}
-  </div>
-</div>
 

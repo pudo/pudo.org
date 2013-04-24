@@ -1,19 +1,11 @@
 ---
-layout: default
+layout: page 
 title: Blog posts
 ---
 
-<div class="row">
-  <div class="span8">
-    <ul class="entries">
-      {% for post in site.categories.blog %}
-        {% include blog_post.html %}
-      {% endfor %}
-    </ul>
-  </div>
-
-  <div class="span4">
-    {% include menu.html %}
-  </div>
-</div>
+<ul class="entries">
+  {% for post in site.categories.blog %}
+    {% include blog_post.html %}
+  {% endfor %}
+</ul>
 

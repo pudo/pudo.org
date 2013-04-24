@@ -14,7 +14,7 @@ content, sites like the [UNDP data explorer](http://open.undp.org/)
 demonstrate that often, a set of JSON file is enough to power a great
 project. 
 
-[DataFreeze](https://github.com/spiegelonline/datafreeze) facilitates
+DataFreeze (now [dataset](https://github.com/pudo/dataset), ed.) facilitates
 the creation of such applications by freezing relational data from a 
 SQL database into a set of easy-to-use JSON and CSV files. What data is
 included gets controlled by a Freezefile - a simple YAML or JSON file
@@ -44,5 +44,5 @@ Of course, all of this is not a very hard problem to solve - but
 DataFreeze does it in a clean and simple way that invites you to
 document your workflow so it becomes repeatable by others.
 
-Check out the GitHub repository: [spiegelonline/datafreeze](https://github.com/spiegelonline/datafreeze).
+Check out the GitHub repository: [pudo/dataset](https://github.com/pudo/dataset).
 
