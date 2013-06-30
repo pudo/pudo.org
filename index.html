@@ -1,13 +1,183 @@
 ---
-layout: page
-title: pudo.org
+layout: home
+title: Friedrich Lindenberg
 home: true
 ---
 
-<ul class="entries">
-  {% for post in paginator.posts %}
-    {% include blog_post.html %}
-  {% endfor %}
-</ul>
+<div class="section">
+    <h2>Recent blog posts</h2>
+
+    <ul class="entries">
+      {% for post in paginator.posts %}
+        <li class="entry {{ post.categories }}">
+            {% if post.categories contains "blog" %}
+                <span class="date">{{ post.date | date: "%d.%m.%Y" }}</span>
+                <span class="title"><a href="{{ post.url }}">{{ post.title }}</a></span>
+            {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+    <i class="icon-rss-sign"></i> <a href="/atom.xml">Subscribe now</a> &middot;
+    <a href="/blog">See earlier posts &raquo;</a>
+</div>
+
+<div class="section">
+    <h2><a name="code"></a>Software projects</h2>  
+
+    <h3>Current</h3>
+    <ul class="entries">
+        <!--li><span class="date">2013</span>
+            <span class="title"><a href="http://datawi.re">datawi.re</a></span>,  
+            bla foo foo blah.
+        </li-->
+        <li><span class="date">2013</span>
+            <span class="title"><a href="https://github.com/pudo/twindle">twindle</a></span>,  
+            client toolkit for the Twitter streaming API, storing and analysing statuses.
+        </li>
+        <li><span class="date">2012-2013</span>
+            <span class="title"><a href="http://dataset.readthedocs.org/en/latest/">dataset</a></span>,  
+            easy-to-use Python library for data processing using relational databases.
+        </li>
+        <li><span class="date">2011-2013</span>
+            <span class="title"><a href="http://offenesparlament.de">OffenesParlament</a></span>,  
+            legislative activity tracking system for both chambers of the German parliament. 
+            Features plenary speeches, legislative drafts and personal profiles.
+        </li>
+        <li><span class="date">2012-2013</span>
+            <span class="title"><a href="http://nomenklatura.okfnlabs.org/">nomenklatura</a></span>,  
+            web-based data cleaning tool to help match aliases of an entity in source data 
+            and to map them to its correct form.
+        </li>
+        <li><span class="date">2013</span>
+            <span class="title"><a href="http://databin.pudo.org">databin</a></span>,  
+            a pastebin site for tabular data, enables easy sharing of small data snippets.
+        </li>
+        
+        <li><span class="date">2011-2013</span>
+            <span class="title"><a href="https://github.com/pudo/regenesis">ReGENESIS</a></span>, data extraction from the 
+            repository of the German statistical office, data cube reconstruction.
+        </li>
+    </ul>
+    <h3>Previous</h3>
+    <ul class="entries">
+        <li><span class="date">2010-2013</span>
+            <span class="title"><a href="http://openspending.org">OpenSpending</a></span>.
+            Data warehousing system to support the analysis and visualization of budgetary and spending data
+            from across the globe. Set up budget sites for <a href="http://cameroon.openspending.org/en/">Cameroon</a>,
+            <a href="http://slovakia.openspending.org/">Slovakia</a>,
+            <a href="http://nepal.mapthemoney.org/">Nepal</a>, <a href="http://budzeti.ba/">Bosnia</a>
+            and <a href="http://minasgerais.playground.openspending.org/">Minas Gerais (Brasil)</a>. 
+            Contributed to <a href="http://wheredoesmymoneygo.org/">Where Does My Money Go?</a> and the 
+            <a href="http://data.gov.uk/data/openspending-browse">data.gov.uk spend browser</a>.
+        </li>
+        <li><span class="date">2011-2013</span>
+            <span class="title"><a href="http://messytables.readthedocs.org/">messytables</a></span>, extracting structured
+            data from badly-formatted tabular data.
+        </li>
+        <li><span class="date">2011-2013</span>
+            <span class="title"><a href="http://api.lobbyfacts.eu/">LobbyFacts API</a></span>, an API to provide clean 
+            and current data on lobby activity in the European Union, cooperation with Corporate Europe, LobbyControl
+            and Friends of the Earth Europe. 
+        </li>
+        <li><span class="date">2011</span>
+            <span class="title"><a href="http://webstore.readthedocs.org/en/latest/">WebStore</a></span>, RESTful,
+            SQL-based data store and API generator service.
+        </li>
+        <li><span class="date">2011</span>
+            <span class="title"><a href="http://yourtopia.net/">YourTopia</a></span>, contributor, voting on a custom index
+            for human development criteria. Third price in the World Bank's <a href="http://appsfordevelopment.challengepost.com/">Apps 
+            for Development</a> competition.
+        </li>
+        <li><span class="date">2011</span>
+            <span class="title"><a href="https://bitbucket.org/pudo/flockscrape">FlockScrape</a></span>, distributed 
+            scraping of large web sites, e.g. the German <a href="https://bitbucket.org/pudo/ug/overview">companies 
+            register</a>.
+        </li>
+        <li><span class="date">2011</span>
+            <span class="title"><a href="https://github.com/okfn/datahub">DataHub</a></span>, light-weight, experimental,
+            activity-centric clone of CKAN.
+        </li>
+        <li><span class="date">2011</span>
+            <span class="title"><a href="http://bund.offenerhaushalt.de">OffenerHaushalt</a></span>, visualization of 
+            scraped German budget data.
+        </li>
+        <li><span class="date">2010-2011</span>
+            <span class="title"><a href="http://ckan.org">CKAN</a></span>, worked on 
+          customizations for <a href="http://publicdata.eu">PublicData.eu</a>, <a href="http://iatiregistry.org">IATI
+            Registry</a>, <a href="http://hri.fi">Helsinki Regional Infoshare</a>, <a href="http://thedatahub.org">the 
+            Data Hub</a> and various community instances, including <a href="http://offenedaten.de">OffeneDaten.de</a>
+            in Germany.</li>
+
+      <li><span class="date">2009-2011</span>
+        <span class="title"><a href="http://adhocracy.de">Adhocracy</a></span>, 
+        collaborative policy drafting platform for distributed groups. Deployments for the
+        <a href="http://enquetebeteiligung.de">Commission Internet and
+        Digital Society of the German Parliament</a>, the City of Munich and various other organisations.</li>
+      
+    </ul>
+</div>
+<div class="section">
+    <h2><a name="community"></a>Community projects</h2>
+
+    <ul class="entries">
+        <li>
+            <span class="date">2012-2013</span>
+            <span class="title"><a href="http://okfnlabs.org/">OKFNLabs</a></span>, community of data wranglers and series of hack days
+            on <a href="http://okfnlabs.org/events/hackdays/lobbying.html">EU lobbying</a> and <a href="http://procurement-hack.eventbrite.com/">EU procurement</a>.
+        </li>
+        <li>
+            <span class="date">2011-2012</span>
+            <span class="title"><a href="http://apps4deutschland.de/">Apps für Deutschland</a></span>, co-organizing an open data competition under the patronage of the German Federal Ministry of the Interior.
+        </li>
+        <li>
+            <span class="date">2010-2011</span>
+            <span class="title"><a href="http://berlin.opendataday.de/">Berlin Open Data Day</a> (D2B1)</span>, community/public local open data interest group.
+        </li>
+        <li>
+            <span class="date">2010-2011</span>
+            <span class="title"><a href="http://muenchen.de/mogdy">Munich Open Government Day</a> (MOGDy)</span>, open innovation platform, consulting the city of Munich on open data policies.
+        </li>
+    </ul>
+</div>
+<div class="section">
+    <h2><a name="materials"></a>Training and materials</h2>
+    <ul class="entries">
+        <li>
+            <span class="date">2012-2013</span>
+            <span class="title">World Bank Institute Data Bootcamps</span>, series of multi-day data literacy workshops for
+            journalists, activists and coders in developing nations. Data trainer in
+            <a href="http://nairobi.databootcamp.org/">Nairobi, Kenya</a>,
+            <a href="http://www.highwayafrica.com/">Grahamstown, South Africa</a>,
+            <a href="http://www.opendta.org/Pages/Events/Moldova-Innovation-Week-2012--Open-Development-Technology-Alliance.aspx">Chisinau, Moldova</a> and
+            <a href="http://nepal.databootcamp.org/">Kathmandu, Nepal</a>.
+        </li>
+        <li>
+            <span class="date">2011-2013</span>
+            <span class="title">School of Data Journalism</span>, series of training events with the OKFN and <a href="http://ejc.net/">European Journalism Centre</a>. Contributed to workshops in <a href="http://ogdcamp.org/">Warsaw</a>, <a href="http://blog.okfn.org/2011/08/09/data-driven-journalism-workshop-on-eu-spending-tools-techniques-utrecht-8th-9th-september/">Utrecht</a>,
+            <a href="http://www.journalismfestival.com/">Perugia</a>, <a href="http://www.fjum-wien.at/wp/ddj-conference-2012/">Vienna</a> and <a href="http://www.media.ba/">Konjic (BiH)</a>. 
+        </li>
+        <li>
+            <span class="date">2012</span>
+            <span class="title"><a href="http://openspending.org/resources/handbook/ch001_introduction.html">Spending Data Handbook</a></span>, book sprint to create guidance for civil society organisations in their use and advocacy of government financial data.
+        </li>
+        <li>
+            <span class="date">2011-2012</span>
+            <span class="title"><a href="http://ddjbook.org/">Data Journalism Handbook</a></span>, contributed chapters on <a href="http://ddjbook.org/1.0/en/getting_data_3.html">data acquistion</a> and produced a web version of the book.
+        </li>
+        <li>
+            <span class="date">2011-2012</span>
+            <span class="title"><a href="http://wiki.okfn.de/Open_Data_FAQ">Open Data FAQ</a></span>, frequently asked questions on the progress of open data initiatives in Germany and the relevant political and technical background.
+        </li>
+        <li>
+            <span class="date">2010-2011</span>
+            <span class="title"><a href="http://datapatterns.org">DataPatterns</a></span>, a collection of design patterns for data processing. Deprecated in favor of the <a href="http://schoolofdata.org/handbook/">School of Data Handbook</a>.
+        </li>
+    </ul>
+</div>
+
+
+
+
+
 
 

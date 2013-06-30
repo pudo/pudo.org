@@ -20,8 +20,22 @@ body {
   line-height: 1.4em;
 }
 
+/*
 a {
   color: #08c;
+}
+
+a:hover, a:active {
+  color: #08c;
+}
+*/
+
+a {
+  color: #BA4B37;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 ul {
@@ -32,137 +46,89 @@ li {
   margin: 0 0 10px;
 }
 
-a:hover, a:active {
-  color: #08c;
-}
-
 h1, h2, h3, h4, h5, h6 {
-    margin-top: 0px;
-    font-weight: normal;
-    font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
 }
 
-ul.entries {
+
+/* Header Area */
+
+header {
+  margin: 2em 0 2em 0;
+}
+
+header h1 {
+  background-image: url(http://assets.pudo.org/img/logo_bigger.png);
+  background-repeat: no-repeat;
+  padding: 0.6em 0 0.2em 3em;
+
+}
+
+header h1 a {
+  color: #333;
+}
+
+
+/* Sidebar */
+
+#sidebar {
+  font-size: 0.9em;
+  color: #666;
+}
+
+#sidebar h3 {
+  font-size: 1.2em;
+  margin: 0.5em 0 0 0;
+  text-transform: lowercase;
+}
+
+#sidebar h3.first {
+  margin-top: 0em;
+}
+
+#sidebar ul {
   list-style-type: none;
   margin: 0;
 }
 
-#airlock {
-  padding-top: 60px;
+#sidebar ul li {
+  margin: 0 0 0.5em 0;
 }
 
-#menu.navbar-fixed-top .navbar-inner {
-  background-image: none;
-  background-color: none;
-  border: 0;
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
+/* Front page listings */
+
+#page .section {
+  margin: -0.4em 0 2em 0;
 }
 
-#menu .brand {
-  font-size: inherit;
-  font-weight: bold;
-  text-shadow: none;
-  /*min-width: 8em;*/
+#page h2 {
+  margin: 0 0 0.5em 0;
+  text-transform: uppercase;
+  font-size: 1.4em;
 }
 
-#menu {
+#page h3 {
+  margin: 0 0 0.5em 0;
+  text-transform: uppercase;
   font-size: 1.2em;
 }
 
-#menu ul.nav li {
+#page .entries {
+  list-style-type: none;
   margin: 0;
-  min-width: 8em;
-  border-bottom-width: 4px;
-  border-bottom-style: solid;
 }
 
-#menu ul.nav li:hover a {
-  color: #fff !important;
-  text-shadow: none !important;
+#page .entries li {
+  text-indent: -3em;
+  padding-left: 3em;
 }
 
-ul.entries li.entry {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  margin-bottom: 1em;
-  /*background-color: #f0f0f0;*/
-  border-bottom: 1px solid #ddd;
-}
-
-ul.entries li.entry {
-  position: relative;
-}
-
-ul.entries li.entry .preview {
-  color: #999;
-}
-
-ul.entries li.entry:before {
-    content: '';
-    position: absolute;
-    bottom: 0; right: 0;
-    border-left: 30px solid white;
-    width: 0;
-}
-
-ul.entries li.entry.blog:before {
-    border-bottom: 30px solid #46336B;
-}
-
-ul.entries li.entry.projects:before {
-    border-bottom: 30px solid #BA4B37;
-}
-
-ul.entries li.entry img.image {
-  border: 10px solid #eee;
-  margin-bottom: 0.5em;
-}
-
-footer {
-  margin-top: 2em;
-  padding: 2em 0 4em 0;
-  background-color: #fafafa;
+#page .entries .date {
   color: #666;
 }
 
-footer a {
-  color: #555;
-  font-weight: bold;
-}
-
-#menu li.blog {
-  border-bottom-color: #46336B;
-}
-
-#menu li.blog:hover {
-  background-color: #46336B;
-}
-
-
-#menu li.projects {
-  border-bottom-color: #BA4B37;
-}
-
-#menu li.projects:hover {
-  background-color: #BA4B37;
-}
-
-#menu li.tools {
-  border-bottom-color: #F5DE14;
-}
-
-#menu li.tools:hover {
-  background-color: #F5DE14;
-}
-
-#menu li.data {
-  border-bottom-color: #4C9923;
-}
-
-#menu li.data:hover {
-  background-color: #4C9923;
+#page .entries .title {
+  font-weight: 600;
 }
 
 /* Post page */
@@ -174,18 +140,3 @@ footer a {
 .related-posts {
   
 }
-
-#sidebox {
-  /*padding: 0.3em;*/
-  margin: 0.5em 0 1.5em 0;
-  padding: 0.5em 0 0;
-  font-size: 1em;
-  font-weight: 600;
-  border-top: 2px solid #BA4B37;
-  border-bottom: 2px solid #F5DE14;
-  /*color: #F5DE14;
-  border: 1px solid #F5DE14;
-  background-color: #F5DE14;
-  */
-}
-

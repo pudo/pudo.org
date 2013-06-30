@@ -8,6 +8,7 @@
     <meta name="author" content="Friedrich Lindenberg" />
 
     <link href="http://assets.pudo.org/libs/bootstrap-2.2.2/css/bootstrap.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
     <link href="/css/style.css" rel='stylesheet' type='text/css'>
 
@@ -16,28 +17,13 @@
     <link rel="shortcut icon" href="http://assets.pudo.org/img/favicon.ico">
   </head>
   <body class="body-data">
-  <div id="menu" class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <a class="brand" href="/">pudo.org</a>
-        <ul class="nav">
-          <li class="blog"><a href="/blog">Blog</a></li>
-          <li class="projects"><a href="/projects">Projects</a></li>
-          <li class="tools"><a href="/tools">Tools</a></li>
-          <li class="data"><a href="/data">Data</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div id="airlock" class="container">
-    {% if page.home != true %}
-    <h2 class="page-header">
-      {{ page.title }}
-    </h2>
-    {% endif %}
+    <header class="container">
+      <h1><a href="/">Friedrich Lindenberg</a> <small>civic coder</small></h1>
 
-    {{ content }}
-  </div>
+    </header>
+    <div id="airlock" class="container">
+      {{ content }}
+    </div>
 
   <script type="text/javascript">
     var _gaq = _gaq || [];
