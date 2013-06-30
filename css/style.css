@@ -68,6 +68,14 @@ header h1 a {
   color: #333;
 }
 
+/* Footer area */
+
+footer {
+  padding: 5em 0 5em 0;
+  color: #666;
+  text-align: right;
+}
+
 
 /* Sidebar */
 
