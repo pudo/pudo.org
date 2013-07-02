@@ -2,7 +2,7 @@
 layout: post
 author: Friedrich Lindenberg
 title: "Notes: Crunching text documents for fun and knowledge"
-#opennews: false
+opennews: true
 #published: false
 ---
 
