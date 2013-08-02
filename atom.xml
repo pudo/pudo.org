@@ -14,13 +14,15 @@ layout: nil
  </author>
 
  {% for post in site.posts %}
- <entry>
-   <title>{{ post.title | xml_escape }}</title>
-   <link href="http://pudo.org{{ post.url }}"/>
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://pudo.org{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
- </entry>
+ {% if post.unlisted != true %}
+     <entry>
+       <title>{{ post.title | xml_escape }}</title>
+       <link href="http://pudo.org{{ post.url }}"/>
+       <updated>{{ post.date | date_to_xmlschema }}</updated>
+       <id>http://pudo.org{{ post.id }}</id>
+       <content type="html">{{ post.content | xml_escape }}</content>
+     </entry>
+ {% endif %}
  {% endfor %}
  
 </feed>

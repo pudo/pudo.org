@@ -148,3 +148,17 @@ footer {
 .related-posts {
   
 }
+
+.captioned {
+  margin: 1em 0 1em 0;
+}
+
+.captioned.pull-right {
+  margin: 0em 0em 1em 1em;
+}
+
+.captioned .caption {
+  font-size: 0.9em;
+  margin: 0.5em 0 0 0;
+  color: #666;
+}
