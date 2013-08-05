@@ -11,7 +11,7 @@ recent introduction of a weekly data journalism workshop that brings
 together reporters, fact checkers and designers from both the print
 and online sections of the organisation.
 
-<img src="/img/jigsaw_cluster.png">
+<img src="/img/jigsaw_cluster.png" class="img-responsive">
 
 This week's workshop will focus on dealing with large collections
 of documents, so I took some time on Monday to experiment with a few
@@ -54,7 +54,7 @@ Java container. As part of this software smörgåsbord, the maintainers
 have included a REST API for Tika which can return either
 a document's plain text or its metadata.
 
-<img src="/img/stanbol.png">
+<img src="/img/stanbol.png" class="img-responsive">
 
 While hardly a non-techie solution, this allowed me to script up a CSV
 file containing each document's title, text, source URL and modification
@@ -80,7 +80,7 @@ hundred Bundestag documents to achieve an acceptable level of responsiveness.
 This may be related to document size, however, as I later had a much better
 experience using a set of 1000 Spiegel Online news stories.
 
-<img src="/img/jigsaw_grid.png">
+<img src="/img/jigsaw_grid.png" class="img-responsive">
 
 The Jigsaw interface is the type of thing that will make you want to tear
 out your own eyeballs, but there is a [set of tutorial videos](http://www.cc.gatech.edu/gvu/ii/jigsaw/tutorial/)
@@ -95,7 +95,7 @@ web service. Even for English documents, I didn't see any support for the normal
 extracted entities, so "Edward Snowden", "Mr. Snowden" and "Edward J Snowden"
 remain separate.
 
-<img src="/img/jigsaw_timeline.png">
+<img src="/img/jigsaw_timeline.png" class="img-responsive">
 
 The different views of Jigsaw - graphs, time lines, and various clever listings -
 are well thought out, but on the whole, it remains a research tool that would 
@@ -125,7 +125,7 @@ in 2011 funded to build out some experimental tools used for the WikiLeaks cable
 newsroom, Overview directly integrates with [DocumentCloud](https://www.documentcloud.org/)
 and features a simple and clean web interface. 
 
-<img src="/img/overview_spint.png">
+<img src="/img/overview_spint.png" class="img-responsive">
 
 Unlike Jigsaw, Overview makes no use of entity extraction and relies entirely on term
 frequencies in documents. Documents are visually clustered by showing characteristic terms

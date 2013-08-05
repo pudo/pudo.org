@@ -12,13 +12,20 @@
 html, body {
   background-color: #fff;
   color: #222;
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
   line-height: 1.4em;
 }
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 940px;
+  }
+}
+  
 
 /*
 a {
@@ -40,6 +47,7 @@ a:hover {
 
 ul {
   list-style-type: square;
+  padding: 0;
 }
 
 li {
@@ -48,6 +56,8 @@ li {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
+  line-height: 1.8em;
+  margin-bottom: 0.6em;
 }
 
 
@@ -60,8 +70,12 @@ header {
 header h1 {
   background-image: url(http://assets.pudo.org/img/logo_bigger.png);
   background-repeat: no-repeat;
-  padding: 0.6em 0 0.2em 3em;
+  padding: 0.3em 0 0.2em 3em;
+}
 
+header h1.visible-sm {
+  margin: 0 0.3em 0 0.3em;
+  padding-left: 2.4em;
 }
 
 header h1 a {
@@ -86,7 +100,7 @@ footer {
 
 #sidebar h3 {
   font-size: 1.2em;
-  margin: 0.5em 0 0 0;
+  margin: 0.5em 0 0.7em 0;
   text-transform: lowercase;
 }
 

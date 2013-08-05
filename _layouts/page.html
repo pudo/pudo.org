@@ -3,7 +3,14 @@ layout: default
 ---
 
 <div class="row">
-    <div class="span3" id="sidebar">
+    <div class="span9 col-12 col-sm-9 col-lg-9 col-push-3" id="page">
+        <h2>
+            {{ page.title }}
+        </h2>
+
+        {{content}}
+    </div>
+    <div class="span3 col-12 col-sm-3 col-lg-3 col-pull-9" id="sidebar">
         <h3 class="first">pudo.org</h3>
         <ul>
             <li><i class="icon-angle-right"></i> <a href="/blog">blog archive</a></li>
@@ -16,11 +23,5 @@ layout: default
         <h3>about me</h3>
         {% include bio.html %}
     </div>
-    <div class="span9" id="page">
-        <h2>
-            {{ page.title }}
-        </h2>
-
-        {{content}}
-    </div>
 </div>
+

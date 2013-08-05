@@ -12,7 +12,7 @@ Before reaching Nepal I started to notice a change in treatment, as I was moved 
 
 Over the ten days, I felt like I was treated like royalty. The only places where I was not were the temple sites at which everyone was either a holy man or white tourist and the Kathmandu hacker space, where folks had a different frame of reference for interacting with me. I was grateful that when hanging out with these fellow coders, as I finally got a proper sense of the relaxed, funny and smart people I had the pleasure of visiting.
 
-<img src="/img/thamel_square.png">
+<img src="/img/thamel_square.png" class="img-responsive">
 
 Elsewhere, this treatment would at times get almost comical, like when our tour guide in the Thamel area of the city insisted on using a World Bank business card to gain us access to the royal palace.
 
