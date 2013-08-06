@@ -106,7 +106,7 @@ result from a newsrooms daily operations and gives them a permanent
 home.
 
 <div class="captioned">
-    <iframe src="http://player.vimeo.com/video/47684166" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    <iframe src="http://player.vimeo.com/video/47684166" width="700" height="393" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
     <div class="caption">
         <a href="http://vimeo.com/47684166">Welcome to PANDA!</a> from <a href="http://vimeo.com/pandaproject">PANDA Project</a>
     </div>
