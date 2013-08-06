@@ -23,6 +23,15 @@ the environment make this hard to achieve.
 What problem needs to be solved?
 --------------------------------
 
+<div class="captioned">
+    <img src="/img/stuff.png" class="img-responsive">
+    <div class="caption">
+        Like anyone working with diverse datasets, I've built up the 
+        <em>misc</em> folder, random bits of data without much 
+        context.
+    </div>
+</div>
+
 A data management approach for a news organisation might include a variety
 of goals, many of which are, of course, similar to what the larger (open)
 data community is facing:
