@@ -48,7 +48,7 @@ related concerns to keep in mind.
 What are people doing now?
 --------------------------
 
-Luckily, instead of starting from nothing, we can already see some of the
+Luckily, instead of having to start from scratch, we can already see some of the
 strategies used by other media organisations and their data teams. 
 
 My information on the [Guardian data blog's](http://www.theguardian.com/news/datablog) approach to this may be a bit
@@ -146,7 +146,3 @@ I'm keen to actually run the CKAN experiment and too see if this very structured
 approach will succeed. At the same time, I'm hoping that other people 
 may be aware of better solutions to this challenge - so: how does your 
 news organisation manage its data?
-
-
-
-

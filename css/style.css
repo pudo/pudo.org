@@ -163,6 +163,10 @@ footer {
   
 }
 
+#post ul {
+  padding: 0 0 0 2em;
+}
+
 .captioned {
   margin: 1em 0 1em 0;
 }
