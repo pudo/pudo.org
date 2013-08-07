@@ -7,6 +7,15 @@ opennews: true
 #published: false
 ---
 
+
+<div class="captioned pull-right">
+    <img src="/img/demap.png">
+    <div class="caption" style="max-width: 290px;">
+        A choropleth map to indicate the availability of high-quality, 
+        machine readable statistical data in ReGENESIS.
+    </div>
+</div>
+
 One of the first tasks I was given by Spiegel Online was to make a set of simple 
 maps to display basic statistics about Germany - things like population, unemployment
 or insolvencies. As Germany's statistical data are collected in a system called 
@@ -21,8 +30,8 @@ layed out, and getting out a predicatable data series requires you to pretty muc
 write a bespoke parser for each table.
 
 So I decided to solve this issue for others as well and make [ReGENESIS](http://regenesis.pudo.org),
-a service and toolkit to provide clean and well-structured data from the German statistical
-database services.
+**a service and toolkit to provide clean and well-structured data from the German statistical
+ services**.
 
 This was inspired by some great examples of similar projects other
 countries: [Census.IRE.org](http://census.ire.org/) provides a lot of structured
@@ -31,23 +40,29 @@ project is now thinking this through a lot further. I'm also really impressed by
 been doing on [treasury.io](http://treasury.io/), a convenient data source with a
 ScraperWiki-based SQL query endpoint and client bindings for a variety of languages.
 
+ReGENESIS is powered by a collection of Python scripts [available on GitHub](https://github.com/pudo/regenesis). 
+The scripts will first scrape bulk data exports from the official site and store them 
+locally. These are then processed and loaded into a database, retaining a rich set of
+metadata as well as the actual observations. Then, the database contents are dumped to
+CSV file extracts, two for each dataset:
+
+* A *researcher's version* with human-readable column names that make it easy to use in
+  a spreadsheet program for manual analysis.
+* A *raw version* with more detail and machine-friendly column names, easier to 
+  parse for further processing.
+
+Finally, Flask helps render a simple user interface to flat files to represent the
+metadata. Finally, the entire site is uploaded to Amazon S3 so that no server is
+required to serve any of the content. This makes ReGENESIS easy to maintain, all I
+need to do is run the extractors once a week to make sure that we're offering the
+latest data.
+
 <div class="captioned">
     <img src="http://blog.nerdular.com/wp-content/uploads/2013/05/key_art_regenesis.jpg" class="img-responsive">
     <div class="caption">
         Not really related, but that TV show was a lot of fun. 
     </div>
 </div>
-
-ReGENESIS is powered by a collection of Python scripts [available on GitHub](https://github.com/pudo/regenesis). 
-The scripts will first scrape bulk data exports from the official site and store them 
-locally. These are then processed and loaded into a database, retaining a rich set of
-metadata as well as the actual observations. Then, the database contents are dumped to the
-published file extracts and Flask is used to render a simple user interface to flat files
-to represent the metadata. Finally, the entire site is uploaded to Amazon S3 so that
-no server is required to serve any of the content.
-
-This makes ReGENESIS easy to maintain, all I need to do is run the extractors once 
-a week to make sure that we're offering the latest data.
 
 ### Whats next?
 
