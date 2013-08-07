@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Management in News Organisations
-unlisted: true
+unlisted: false
 author: Friedrich Lindenberg
 opennews: true
 #published: false
