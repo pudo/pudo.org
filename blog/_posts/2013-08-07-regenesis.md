@@ -35,3 +35,26 @@ ScraperWiki-based SQL query endpoint and client bindings for a variety of langua
     </div>
 </div>
 
+I used bulk export yada yada...
+
+Generate to S3.
+
+
+Ideas for next steps
+
+**More data**: At the moment, I'm only importing data from the Regionalstatistik portal which publishes
+statistics from state level authorities. The much larger GENESIS database operated 
+by the federal statistical office has its bulk export function locked down and 
+requires a EUR 500 subscription for access to that functionality. Maybe this could 
+be an opportunity for an open data kickstarter? 
+
+**API**: ReGENESIS holds some fairly large tables, and in order to pull them into 
+graphics or other client applications it would be nice to be able to get filtered and
+aggregated versions instead of the full data. I'm somewhat reluctant to run a server 
+for this (and host something like Stefan Urbanek's [cubes](https://github.com/Stiivi/cubes)),
+but most of the hosted data API tools I've checked out so far are either too expensive
+or very limited in terms of capacity.
+
+
+
+http://blog.opendatalab.de/hack/2013/07/15/heilbronn-regionalstatistik-visualisierung/
