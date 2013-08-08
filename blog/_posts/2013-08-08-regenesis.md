@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "ReGENESIS: German statistics made accessible"
-unlisted: true
+title: "ReGENESIS: German statistics as raw data"
+unlisted: false
 author: Friedrich Lindenberg
 opennews: true
 #published: false
