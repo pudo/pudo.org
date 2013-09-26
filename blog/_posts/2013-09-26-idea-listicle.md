@@ -13,11 +13,11 @@ I've been keeping a list of ideas that I feel there might be a need for. None of
 are really new concepts, but they are places in which I feel that none of the existing
 technologies are mature enough to work in a newsroom.
 
-**Easy choropleth maps.** While the tools for making maps without coding have gotten much
-better over the last year (thanks, for example, to the mapping support in [D3](http://d3js.org/)
+**Easy choropleth maps.** While the tools for making maps without proper GIS software
+have gotten much better over the last year (thanks, for example, to the mapping support in [D3](http://d3js.org/)
 and the great [CartoDB](https://cartodb.com/)), I still feel that we're missing an easy
-tool to generate interactive choropleth maps. Fusion Tables look really dated now, while
-[MapBox/TileMill](http://www.mapbox.com/) are a bit heavy to use for the average
+tool to generate interactive choropleth maps in a rush. Fusion Tables look really dated
+now, while [MapBox/TileMill](http://www.mapbox.com/) are a bit heavy to use for a
 journalist on a tight deadline. Thankfully, [Noah](http://veltman.tumblr.com) has started
 working on [MapStarter](https://github.com/veltman/mapstarter), while the
 [DataWrapper](http://datawrapper.de) team are also working on an extension of their tool.
@@ -79,7 +79,7 @@ SpOn's news planning. This could really benefit from a bespoke kanban tool that 
 notions such as a developing story, topic desks and different delivery channels. Luckily, our
 friends at SourceFabric seem to [already be on the plan](https://wiki.sourcefabric.org/display/NR/Desk).
 
-Of course, this list is fairly random, but what I like about these tools is that they would 
+Of course, this list is fairly random, but what I like about these things is that they would 
 be fairly limited in scope. Other things I've blogged about before, such as solutions to 
 [data management](http://pudo.org/blog/2013/08/05/data-management.html) or [social network
 analysis](http://pudo.org/blog/2011/12/19/sna.html) seem much harder to pin down and align to 
