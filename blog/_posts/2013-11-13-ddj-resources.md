@@ -33,7 +33,7 @@ Still, a little training might help as well:
 * The [School of Data](http://schoolofdata.org/) offers a wide range of training materials, including a lot of [introductory courses](http://schoolofdata.org/courses/), [tool recommendations](http://schoolofdata.org/online-resources/) and a [Q&A forum](http://ask.schoolofdata.org/questions/). If you get a chance, you should also try to attend one of their [events](http://schoolofdata.org/events/).
 * A similar initiative, which is more directly tailored for journalists, is [ForJournalism](http://forjournalism.com/), which has experts explain topics from charting, mapping to responsive design and privacy.
 * Online training organisations like [Coursera](https://www.coursera.org/courses?orderby=upcoming), [Khan Academy](https://www.khanacademy.org/) and co. provide a lot of relevant courses, but I feel like they require a large commitment in terms of time and attention without getting you that first project done.
-* [Scraping for Journalists](https://leanpub.com/scrapingforjournalists), E-Book by Paul Bradshaw, $15.10. 
+* [Getting Started with Data Journalism](https://leanpub.com/datajournalism), E-Book by Claire Miller ($15) and [Scraping for Journalists](https://leanpub.com/scrapingforjournalists), E-Book by Paul Bradshaw ($15). 
 * For all things related to JavaScript, use the [Mozilla Developer Network](https://developer.mozilla.org/en-US/) - it's much much better than many of the things Google will rank above it. 
 * Finally, there's a great overview of tools available at [datavisualization.ch](http://selection.datavisualization.ch/). Just let yourself be inspired and use some of them.
 
