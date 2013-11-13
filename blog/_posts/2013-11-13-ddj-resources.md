@@ -44,7 +44,7 @@ Data journalism is an emerging field, and most of the ways to use data probably 
 * [OpenNews Source](http://source.mozillaopennews.org/) has lots of how-to and post-mortem articles from the wider Knight-Mozilla community.
 * [DataDrivenJournalism.net](http://datadrivenjournalism.net/) is a more European-centric information portal with good interviews, guest posts and links to many relevant resources.
 * The US-based Investigative Reporters and Editors runs [NICAR-L](http://www.ire.org/resource-center/listservs/subscribe-nicar-l/), a very active mailing list of data journalism practitioners. 
-* The Open Knowledge Foundation's [Data-Driven Journalism Mailing List](http://lists.okfn.org/mailman/listinfo/data-driven-journalism) is a great way to learn about events and materials, especially in Europe. 
+* The European Journalism Center and the Open Knowledge Foundation run a joint [Data-Driven Journalism Mailing List](http://lists.okfn.org/mailman/listinfo/data-driven-journalism), a great way to learn about events and materials, especially in Europe. 
 
 Of course, there are plenty other blogs and websites around. Many of them are listed in this [Google Spreadsheet](https://docs.google.com/spreadsheet/ccc?key=0Aps26R6VsRYUdHNGOVlyVlZfS2NLcHpSRElZMkhaV0E&usp=drive_web#gid=0), which also contains twitter contacts for the people running these sites.
 
