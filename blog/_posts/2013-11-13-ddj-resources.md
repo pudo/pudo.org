@@ -37,6 +37,8 @@ Still, a little training might help as well:
 * For all things related to JavaScript, use the [Mozilla Developer Network](https://developer.mozilla.org/en-US/) - it's much much better than many of the things Google will rank above it. 
 * Finally, there's a great overview of tools available at [datavisualization.ch](http://selection.datavisualization.ch/). Just let yourself be inspired and use some of them.
 
+There's also an amazing [list of reading material](http://www.smalldatajournalism.com/readings/) curated by Dan Nguyen for his data journalism course at the New York University. 
+
 ### Join the community
 
 Data journalism is an emerging field, and most of the ways to use data probably haven't been invented yet. The best way to learn interesting things about data journalism is to be in touch with the people who do it. That's why you should follow some of these interesting blogs and mailing lists:
