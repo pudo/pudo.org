@@ -2,12 +2,19 @@
 layout: post
 title: "OpenInterests.eu: relating lobbying, expert groups and public finance in the European Union"
 author: Friedrich Lindenberg
-#opennews: true
-published: false
+opennews: true
+#published: false
 ---
 
 During last weekend's [#EPhack](http://europarl.me/) in Brussels, I built a minimalistic frontend for [OpenInterests.eu](http://openinterests.eu/). The site lets everyone explore which people, companies and institutions have political or financial interests in decisions of the European Union institutions.
 
+
+<div class="captioned">
+    <img src="/img/openinterests.png" class="img-responsive" alt="OpenInterests.eu">
+    <div class="caption">
+        OpenInterests.eu interface prototype from the #hackEP coding session.
+    </div>
+</div>
 
 ### What is it good for?
 
