@@ -3,9 +3,11 @@ layout: page
 ---
 
 <p class="post-date">{{ page.date | date_to_long_string }}</p>
+
 <div id="post">
   {{ content }}
 </div>
+
 <div id="disqus_thread" class="hidden-sm"></div>
 <script type="text/javascript">
   var disqus_shortname = 'pudo'; 
@@ -26,5 +28,4 @@ $(function() {
   });
 });
 </script>
-
 
