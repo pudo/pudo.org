@@ -2,3 +2,6 @@ markdown: rdiscount
 highlighter: pygments
 
 paginate: 5
+
+sass:
+  style: compressed
