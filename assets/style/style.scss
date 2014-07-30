@@ -94,39 +94,16 @@ header {
 footer {
   padding: 5em 0 5em 0;
   color: #666;
-  text-align: right;
-}
-
-
-/* Sidebar */
-
-#sidebar {
-  font-size: 0.9em;
-  color: #666;
-
-  h3 {
-    font-size: 1.2em;
-    margin: 0.5em 0 0.7em 0;
-    text-transform: lowercase;
-  }
-
-  h3.first {
-    margin-top: 0em;
-  }
 
   ul {
     list-style-type: none;
-    margin: 0;
-  }
-
-  ul li {
-    margin: 0 0 0.5em 0;
   }
 }
 
+
 /* Front page listings */
 
-#page {
+#airlock {
 
   .section {
     margin: -0.4em 0 2em 0;
@@ -142,6 +119,10 @@ footer {
     margin: 0 0 0.5em 0;
     text-transform: uppercase;
     font-size: 1.2em;
+  }
+
+  ul.menu {
+    list-style-type: none;
   }
 
   .entries {

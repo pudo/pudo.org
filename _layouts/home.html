@@ -3,10 +3,12 @@ layout: default
 ---
 
 <div class="row">
-    <div class="col-md-9 col-md-push-3" id="page">
+    <div class="col-md-7" id="page">
         {{content}}
     </div>
-    <div class="col-md-3 col-md-pull-9 hidden-print" id="sidebar">
+    <div class="col-md-5 hidden-print" id="sidebar">
         {% include bio.html %}
+
+        {% include projects.html %}
     </div>
 </div>
