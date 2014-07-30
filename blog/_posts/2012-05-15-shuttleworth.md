@@ -24,7 +24,7 @@ is not surprising for political actors, German geeks seem to be doing the same:
 instead of using their technical skills to create digital civic infrastructure, many
 are now [running for office](http://piratenpartei.de). While this is an interesting development, it also means that there are few interesting open government initiatives.
 
-![OffenesParlament](/img/offenesparlament.png)
+![OffenesParlament](/assets/images/offenesparlament.png)
 *OffenesParlament - a legislative tracking site.*
 
 As a demonstration of the kinds of tools needed, I spent a lot of time in October 
@@ -38,7 +38,7 @@ support of various NGOs ([OKFN](http://okfn.de), [CCC](http://ccc.de), [Digitale
 The events helped to connect [different](http://www.hamburgmittedokumente.de/)
 [data](http://fragdenstaat.de) [initiatives](http://offeneskoeln.de/), but attendance was low, showing a need for more professional organizing.
 
-![Open Data Cologne](/img/cologne.png)
+![Open Data Cologne](/assets/images/cologne.png)
 *A working group at the cologne open data hackday.*
 
 Based on these experiences of trying to grow the German community, we're currently 
@@ -65,7 +65,7 @@ to lend a (web-designing) hand to the awesome team producing the [Data
 Journalism Handbook](http://ddjbook.org/1.0/en/getting_data_3.html), a 
 collection of texts about this emerging practice. 
 
-![Data Bootcamp Nairobi](/img/nairobi.png)
+![Data Bootcamp Nairobi](/assets/images/nairobi.png)
 *Data journalism training in Nairobi.*
 
 Although the external conditions of these events are very different, their goals 
@@ -84,7 +84,7 @@ around the European Union's lobby register. After creating a prototype
 discussion piece in December, a lot of data cleansing work lead into a second 
 [demo version of the site](http://lobbydemo.pudo.org/) near the end of March.
 
-![LobbyTransparency](/images/lobbydemo.png)
+![LobbyTransparency](/assets/images/lobbydemo.png)
 *Second prototype of the EU lobby tracker.*
 
 The data work, however, proved not to be the most challenging part of the 
@@ -99,7 +99,7 @@ is a re-usable service for actor and relationship mapping, which I hope to
 develop into a journalistic tool in the future. It could help to enable the 
 evidence-driven analysis of power structures in an accessible way.
 
-![Grano](/img/grano.png)
+![Grano](/assets/images/grano.png)
 *Grano: social network analysis for advocacy.*
 
 Bottom line

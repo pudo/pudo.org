@@ -9,7 +9,7 @@ opennews: false
 Vor drei Jahren habe ich mit der Entwicklung des [OffenenParlaments](http://offenesparlament.de/) begonnen. Ziel ist, einen einfachen Überblick über die Aktivitäten der Gesetzgeber im Bund zu erlauben: welche Gesetze stehen grade zur Debatte? Welche Debatten finden im Plenum statt? Welche Politiker sind an welchen Prozessen beteiligt?
 
 <div class="captioned">
-    <a href="http://offenesparlament.de"><img src="/img/offenesparlament_cp.png" class="img-responsive" alt="OffenesParlament.de"></a>
+    <a href="http://offenesparlament.de"><img src="/assets/images/offenesparlament_cp.png" class="img-responsive" alt="OffenesParlament.de"></a>
     <div class="caption">
         Was passiert in Bundestag und Bundesrat?
     </div>

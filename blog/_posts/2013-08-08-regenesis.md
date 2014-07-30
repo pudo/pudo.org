@@ -9,7 +9,7 @@ opennews: true
 
 
 <div class="captioned pull-right">
-    <img src="/img/demap.png">
+    <img src="/assets/images/demap.png">
     <div class="caption" style="max-width: 290px;">
         A choropleth map to indicate the availability of high-quality, 
         machine readable statistical data in ReGENESIS.

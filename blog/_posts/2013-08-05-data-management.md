@@ -24,7 +24,7 @@ What problem needs to be solved?
 --------------------------------
 
 <div class="captioned">
-    <img src="/img/stuff.png" class="img-responsive">
+    <img src="/assets/images/stuff.png" class="img-responsive">
     <div class="caption">
         Like anyone working with diverse datasets, I've built up the 
         <em>misc</em> folder, random bits of data without much 

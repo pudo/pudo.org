@@ -10,7 +10,7 @@ During last weekend's [#EPhack](http://europarl.me/) in Brussels, I built a mini
 
 
 <div class="captioned">
-    <img src="/img/openinterests.png" class="img-responsive" alt="OpenInterests.eu">
+    <img src="/assets/images/openinterests.png" class="img-responsive" alt="OpenInterests.eu">
     <div class="caption">
         OpenInterests.eu interface prototype from the #hackEP coding session.
     </div>

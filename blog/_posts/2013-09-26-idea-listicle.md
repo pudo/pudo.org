@@ -45,7 +45,7 @@ knowledge of the whole dataset. While there are some in-browser attempts to do s
 don't scale very well. Google site searches, similarly, allow for little customization.
 
 <div class="captioned">
-    <a href="http://www.spiegel.de/politik/deutschland/wahlprogramm-browser-vergleichen-sie-die-parteipositionen-a-918624.html"><img src="/img/wahlprogramme.png" class="img-responsive"></a>
+    <a href="http://www.spiegel.de/politik/deutschland/wahlprogramm-browser-vergleichen-sie-die-parteipositionen-a-918624.html"><img src="/assets/images/wahlprogramme.png" class="img-responsive"></a>
     <div class="caption">
         Searching election programmes requires a custom backend, but why?
     </div>

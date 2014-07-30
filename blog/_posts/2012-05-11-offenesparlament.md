@@ -8,7 +8,7 @@ Schon seit langem wünsche ich mir eine Seite wie [TheyWorkForYou](http://theywo
 zu den Plenarreden und Arbeitsabläufen des Bundestags bekommt. Im Gegensatz zu Abgeordnetenwatch 
 soll der Fokus also nicht auf den Parlamentariern, sondern auf der Sache liegen. [Stefan](http://stefanwehrmeyer.com/) hatte dazu vor einigen Jahren mit dem [Bundestagger](http://bundestagger.de/) einen ersten Aufschlag gemacht - jetzt will ich mit [OffenesParlament](http://offenesparlament.de) noch einen Versuch machen.
 
-![OffenesParlament](/img/offenesparlament.png)
+![OffenesParlament](/assets/images/offenesparlament.png)
 
 Warum das ganze? Nunja, ich glaube OffenesParlament hat einige spannende Funktionen: 
 
