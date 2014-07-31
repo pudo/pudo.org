@@ -20,30 +20,30 @@
   </head>
   <body>
     {% include nav.html %}
+    {{ content }}
 
-    <div id="airlock" class="container-fluid">
-      {{ content }}
-    </div>
-
-    <footer class="container-fluid hidden-print">
-      <div class="row">
-        <div class="col-md-6">
-          <ul>
-            <li><a href="mailto:friedrich@pudo.org"><i class="fa fa-envelope-square"></i> friedrich@pudo.org</a> (<a href="/key.html">gnupg</a>)</li>
-            <li><a href="https://twitter.com/pudo"><i class="fa fa-twitter-square"></i> twitter.com/pudo</a></li>
-            <li><a href="https://github.com/pudo"><i class="fa fa-github-square"></i> github.com/pudo</a></li>
-            <!--li><a href="https://facebook.com/flindenberg"><i class="fa fa-facebook-square"></i> facebook.com/flindenberg</a></li-->
-            <li><a href="skype:friedrich.cleversoft"><i class="fa fa-skype"></i> friedrich.cleversoft</a></li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <div class="pull-right">
-            <span class="kallisti">(K)</span> 2005-2014: All rites reversed.
+    <footer class="hidden-print">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <ul>
+              <li><a href="mailto:friedrich@pudo.org"><i class="fa fa-envelope-square"></i> friedrich@pudo.org</a> (<a href="/key.html">gnupg</a>)</li>
+              <li><a href="https://twitter.com/pudo"><i class="fa fa-twitter-square"></i> twitter.com/pudo</a></li>
+              <li><a href="https://github.com/pudo"><i class="fa fa-github-square"></i> github.com/pudo</a></li>
+              <!--li><a href="https://facebook.com/flindenberg"><i class="fa fa-facebook-square"></i> facebook.com/flindenberg</a></li-->
+              <li><a href="skype:friedrich.cleversoft"><i class="fa fa-skype"></i> friedrich.cleversoft</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <div class="pull-right">
+              <span class="kallisti">(K)</span> 2005-2014: All rites reversed.
+            </div>
           </div>
         </div>
       </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     {% include ga.html %}
   </body>
