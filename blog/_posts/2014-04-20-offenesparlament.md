@@ -3,6 +3,9 @@ layout: post
 title: "OffenesParlament: Open Data-Projekt sucht neues Team"
 author: Friedrich Lindenberg
 opennews: false
+description: >
+  Nach drei Jahren Arbeit am Gesetzgebungs-Tracker OffenesParlament muss
+  ich das spannende Projekt nun an ein neues Team abgeben. 
 #published: false
 ---
 

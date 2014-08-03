@@ -2,6 +2,9 @@
 layout: post
 title: "Where to learn about data journalism"
 author: Friedrich Lindenberg
+description: >
+  A collection of reading materials and inspiring examples of data
+  journalism.
 opennews: false
 ---
 

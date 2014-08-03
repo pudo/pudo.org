@@ -1,7 +1,12 @@
 ---
-title: "Civic Patterns, a common language for news and citizen engagement app design"
+title: "Civic Patterns, a language for news and citizen engagement design"
 layout: post
 author: Friedrich Lindenberg
+description: >
+  We're launching a catalogue of design patterns for civic engagement
+  that is aimed not just at digital NGOs, but also media organisations.
+
+
 opennews: false
 ---
 

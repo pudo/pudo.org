@@ -2,6 +2,10 @@
 layout: post
 title: "Charting Social Network Analysis Tools"
 author: Friedrich Lindenberg
+description: >
+  A wide range of projects attempt to use the metaphor of social
+  networks to analyze and visualize connections between people 
+  in business and government.
 opennews: false
 ---
 
