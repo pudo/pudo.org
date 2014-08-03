@@ -10,6 +10,7 @@ body {
   color: $font-color;
   line-height: 1.4em;
   font-size: 1.6em;
+  background-color: $primary-color;
 }
 
 .container-fluid {
@@ -59,6 +60,11 @@ h1, h2, h3, h4, h5, h6 {
     -o-transform: rotate($angle);
     -ms-transform: rotate($angle);
   }
+}
+
+#page {
+  background-color: white;
+  padding: 0 0 2em 0;
 }
 
 
@@ -125,10 +131,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Footer area */
 
 footer {
-  margin: 2em 0 0 0;
   padding: 1em 0 1em 0;
   color: $light-font-color;
-  background-color: $primary-color;
   color: white;
 
   a {
@@ -202,6 +206,12 @@ footer {
 
     .title {
       font-weight: 600;
+    }
+
+    .description {
+      color: $light-font-color;
+      text-indent: 0em;
+      display: block;
     }
   }
 }

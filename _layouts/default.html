@@ -20,8 +20,10 @@
     <link rel="shortcut icon" href="http://assets.pudo.org/img/favicon.ico">
   </head>
   <body>
-    {% include nav.html %}
-    {{ content }}
+    <div id="page">
+      {% include nav.html %}
+      {{ content }}
+    </div>
 
     <footer class="hidden-print">
       <div class="container-fluid">
