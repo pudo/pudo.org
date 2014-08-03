@@ -1,23 +1,53 @@
 ---
-layout: home
-title: Friedrich Lindenberg
+layout: default
+title: Home page
+description: >
+  Home page of Friedrich Lindenberg, a civic technologist working on effective
+  tools and methods for data-driven journalism and advocacy. Follow the blog,
+  or explore a wide variety of tools and platforms.
 home: true
 ---
 
-<div class="section">
-    <h2>Recent blog posts</h2>
-
-    <ul class="entries">
-      {% for post in paginator.posts %}
-        <li class="entry {{ post.categories }}">
-            {% if post.categories contains "blog" and post.unlisted != true %}
-                <span class="date">{{ post.date | date: "%d.%m.%Y" }}</span>
-                <span class="title"><a href="{{ post.url }}">{{ post.title }}</a></span>
-            {% endif %}
-        </li>
-      {% endfor %}
-    </ul>
-    <i class="fa fa-rss-square"></i> <a href="/atom.xml">Subscribe now</a> &middot;
-    <a href="/blog">See earlier posts &raquo;</a>
+<div class="intro">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-5 logo-section">
+        {% include logo.html %}
+      </div>
+      <div class="col-md-7 text-section">
+        I'm a software developer and data wrangler working on
+        methods to support effective journalism, activism and civic participation.
+      </div>
+    </div>
+  </div>
 </div>
+
+
+<div id="airlock" class="container-fluid">
+  <div class="row">
+    <div class="col-md-7" id="page">
+      <div class="section">
+          <h2>Recent blog posts</h2>
+
+          <ul class="entries">
+            {% for post in paginator.posts %}
+              <li class="entry {{ post.categories }}">
+                  {% if post.categories contains "blog" and post.unlisted != true %}
+                      <span class="date">{{ post.date | date: "%d.%m.%Y" }}</span>
+                      <span class="title"><a href="{{ post.url }}">{{ post.title }}</a></span>
+                  {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+          <i class="fa fa-rss-square"></i> <a href="/atom.xml">Subscribe now</a> &middot;
+          <a href="/blog">See earlier posts &raquo;</a>
+      </div>
+    </div>
+    <div class="col-md-5 hidden-print" id="sidebar">
+        {% include bio.html %}
+    </div>
+  </div>
+</div>
+
+
 

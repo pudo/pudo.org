@@ -4,7 +4,7 @@
 $primary-color: #BA4B37;
 $primary-color: #4489ca;
 $font-color: #333;
-$light-font-color: #666;
+$light-font-color: #999;
 
 body {
   color: $font-color;
@@ -13,8 +13,8 @@ body {
 }
 
 .container-fluid {
-  padding-right: 2em;
-  padding-left: 2em;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 body, h1, h2, h3, h4, h5, h6 {
@@ -82,6 +82,22 @@ h1, h2, h3, h4, h5, h6 {
     color: $font-color;
     color: lighten($primary-color, 40%);
   }
+
+  button.navbar-toggle {
+    border: 0;
+    .icon-bar {
+      background-color: white;
+    }
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+
+  .navbar-collapse {
+    border-top: 0;
+  }
+
 }
 
 /* Home page intro */
@@ -206,16 +222,16 @@ footer {
 
 .captioned {
   margin: 1em 0 1em 0;
+
+  .caption {
+    font-size: 0.9em;
+    margin: 0.5em 0 0 0;
+    color: $light-font-color;
+  }
 }
 
 .captioned.pull-right {
   margin: 0em 0em 1em 1em;
-}
-
-.captioned .caption {
-  font-size: 0.9em;
-  margin: 0.5em 0 0 0;
-  color: $light-font-color;
 }
 
 .standalone {
