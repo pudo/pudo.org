@@ -1,8 +1,11 @@
 <h2><a name="bio"></a>About myself</h2>
-<p>
-    I'm a software developer and data wrangler working on
-    methods to support effective journalism, activism and civic participation.
-</p>
+
+{% if include.short != 'true' %}
+  <p>
+      I'm a software developer and data wrangler working on
+      methods to support effective journalism, activism and civic participation.
+  </p>
+{% endif %}
 <p>
     As a Knight International Journalism Fellow, I work with
     <a href="http://codeforafrica.org">Code for Africa</a> and the
