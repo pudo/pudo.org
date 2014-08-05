@@ -2,5 +2,22 @@
 layout: boxed
 ---
 
-<h2>{{ page.title }}</h2>
-{{content}}
+<div class="row">
+  <div class="col-md-8">
+    <h2>{{ page.title }}</h2>
+    {{content}}
+  </div>
+  <div class="col-md-4 sidebar">
+    {% assign categories = site.pages | where:"sidebar",true | where:"layout","project" | group_by:"category" %}
+    {% for category in categories %}
+      <h2>{{category.name}}</h2>
+      <ul>
+        {% for item in category.items %}
+          <li><a href="{{item.url}}">{{item.title}}</a></li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+
+    {% include bio.html %}
+  </div>
+</div>
