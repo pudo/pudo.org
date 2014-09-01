@@ -11,6 +11,13 @@ At its current stage of development, grano has achieved some level of maturity a
 
 So it's time to look at the next big challenges: building out the way in which grano lets journalist ask complex questions of their data, and improving the handling of source and quality metadata. As I've [pointed out on IJNet](http://ijnet.org/blog/how-can-online-research-tools-aid-work-investigative-reporters), both of these are essential: having a big bunch of integrated data is cool, but only when you have a tool that lets you interrogate those relationships does it become a real journalistic asset.
 
+<div class="captioned">
+    <img src="/assets/images/connectedafrica.png" class="img-responsive" alt="ConnectedAfrica"></a>
+    <div class="caption">
+        ConnectedAfrica is its prototype stage, collecting information about political connections in South Africa. 
+    </div>
+</div>
+
 Unfortunately, the questions that journalists might want to ask against influence networks are often recursive: "show me all the family members of politicians who work for organisations that receive government contracts", "show me what connects these people to each other". These are the exact type of query that make relational databases cry.
 
 After producing a [proof-of-concept query tool](https://github.com/granoproject/grano-ql) based on grano's relational backend it became clear that a more flexible approach was needed: queries would easily take seconds, some would eat up all server memory. From this point on, there are two choices: use additional backends to satisfy different types of queries; or migrate to another data model entirely.
