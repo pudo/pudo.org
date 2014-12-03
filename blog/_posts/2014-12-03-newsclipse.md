@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Making a workbench for journalists"
+title: "What if journalists had story writing tools as powerful as those used by coders?"
 author: Friedrich Lindenberg
 opennews: false
 description: >
