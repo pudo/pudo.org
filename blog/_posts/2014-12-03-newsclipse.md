@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Making an IDE for journalists"
+title: "Making a workbench for journalists"
 author: Friedrich Lindenberg
 opennews: false
 description: >
