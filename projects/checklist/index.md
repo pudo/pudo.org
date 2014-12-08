@@ -1,5 +1,6 @@
 ---
 layout: project
+fullsize: false
 title: Civic Software Checklist
 category: Making Software
 sidebar: true
