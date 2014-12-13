@@ -18,6 +18,10 @@ body {
   padding-left: 5%;
 }
 
+.container {
+  width: 700px;
+}
+
 body, h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -30,6 +34,10 @@ a {
 
 a:hover {
   color: lighten($primary-color, 10%);
+}
+
+.clean a {
+  text-decoration: none;  
 }
 
 code {
@@ -83,13 +91,21 @@ h1, h2, h3, h4, h5, h6 {
     a {
       color: white;
       text-decoration: none;
+    }
 
+    a:hover {
+      color: white;
     }
   }
 
   a, li a { 
-    color: $font-color;
     color: lighten($primary-color, 40%);
+    text-decoration: none;
+  }
+
+  a:hover, li a:hover {
+    color: white;
+    text-decoration: underline;
   }
 
   button.navbar-toggle {
@@ -99,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     &:hover {
-      background-color: darken($primary-color, 10%);
+      color: white;
     }
   }
 
@@ -114,19 +130,19 @@ h1, h2, h3, h4, h5, h6 {
 .intro {
   background-color: $primary-color;
   color: white;
-  padding-top: 3em;
-  padding-bottom: 0em;
+  padding-top: 2em;
+  padding-bottom: 2em;
 
   .logo-section {
-    font-size: 10em;
+    font-size: 8em;
     text-align: right;
-    padding-top: 0.5em;
+    padding-top: 0.7em;
     padding-right: 0.2em;
     color: lighten($primary-color, 40%);
   }
 
   .text-section {
-    line-height: 2em;
+    line-height: 1.7em;
     font-size: 1.6em;
   }
 }
@@ -139,7 +155,7 @@ footer {
   color: white;
 
   a {
-    text-decoration: none;
+    text-decoration: underline;
     color: white;
   }
 
@@ -155,6 +171,10 @@ footer {
 
     li {
       margin-bottom: 0.5em;
+      
+      a {
+        text-decoration: none;
+      }
     }
   }
 }
@@ -199,9 +219,9 @@ footer {
     padding: 0;
 
     li {
-      text-indent: -3em;
-      padding-left: 3em;
-      padding-bottom: 0.5em;
+      //text-indent: -3em;
+      //padding-left: 3em;
+      padding-bottom: 1em;
     }
 
     .date {
@@ -210,11 +230,11 @@ footer {
 
     .title {
       font-weight: 600;
+      font-size: 1.1em;
     }
 
     .description {
-      color: $light-font-color;
-      text-indent: 0em;
+      //text-indent: 0em;
       display: block;
     }
   }

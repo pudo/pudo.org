@@ -2,12 +2,5 @@
 layout: boxed
 ---
 
-<div class="row">
-    <div class="col-md-9 col-md-push-3" id="page">
-        <h2>{{ page.title }}</h2>
-        {{content}}
-    </div>
-    <div class="col-md-3 col-md-pull-9 hidden-print" id="sidebar">
-        {% include bio.html %}
-    </div>
-</div>
+<h2>{{ page.title }}</h2>
+{{content}}

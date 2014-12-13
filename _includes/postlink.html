@@ -1,9 +1,11 @@
 
 <li class="entry {{ include.post.categories }}">
     {% if include.post.categories contains "blog" and post.unlisted != true %}
-        <span class="date">{{ include.post.date | date: "%d.%m.%Y" }}</span>
         <span class="title"><a href="{{ include.post.url }}">{{ include.post.title }}</a></span>
-        <span class="description">{{ include.post.description }}</span>
+        <span class="description">
+          <span class="date">{{ include.post.date | date: "%d.%m.%Y" }}</span>
+          {{ include.post.description }}
+        </span>
     {% endif %}
 </li>
 

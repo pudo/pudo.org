@@ -1,0 +1,17 @@
+---
+layout: page
+fullsize: false
+title: Materials
+---
+
+<div class="section">
+  <ul>
+    {% for page in site.pages %}
+      {% if page.material %}
+        <li><a href="{{page.url}}">{{page.title}}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+
+

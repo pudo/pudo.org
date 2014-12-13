@@ -3,7 +3,8 @@ layout: project
 fullsize: false
 title: Civic Software Checklist
 category: Making Software
-sidebar: true
+permalink: /projects/checklist/
+material: true
 description: >
   As an NGO, how can you successfully make open source software that is
   easy to maintain, adapt and re-use? 
