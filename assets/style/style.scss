@@ -6,11 +6,34 @@ $primary-color: #4489ca;
 $font-color: #333;
 $light-font-color: #999;
 
+@mixin textfont() {
+  font-family: 'Garamond', 'Georgia', serif;
+  line-height: 1.4em;
+  font-weight: 400;
+}
+
+@mixin plainfont() {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; 
+  font-size: 0.9em;
+}
+
+@mixin headerfont() {
+  @include plainfont();
+  font-weight: 800;
+  line-height: 1.8em;
+  margin-bottom: 0.6em;
+
+  a {
+    text-decoration: none;
+  }
+}
+
 body {
   color: $font-color;
-  line-height: 1.4em;
-  font-size: 1.6em;
-  background-color: $primary-color;
+  @include textfont();
+  font-size: 20px;
+  //background-color: $primary-color;
 }
 
 .container-fluid {
@@ -22,9 +45,8 @@ body {
   width: 700px;
 }
 
-body, h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+h1, h2, h3, h4, h5, h6 {
+  @include headerfont();
 }
 
 a {
@@ -43,12 +65,6 @@ a:hover {
 code {
   background-color: lighten($primary-color, 45%);
   color: $primary-color;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  line-height: 1.8em;
-  margin-bottom: 0.6em;
 }
 
 // Logo
@@ -82,6 +98,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Navbar area */
 
 .navbar.navbar-default {
+  @include plainfont();
+  font-size: 0.9em;
   background-color: $primary-color;
   border-bottom: 0px solid #ddd;
   color: white;
@@ -132,9 +150,10 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   padding-top: 2em;
   padding-bottom: 2em;
+  @include plainfont();
 
   .logo-section {
-    font-size: 8em;
+    font-size: 5em;
     text-align: right;
     padding-top: 0.7em;
     padding-right: 0.2em;
@@ -143,25 +162,30 @@ h1, h2, h3, h4, h5, h6 {
 
   .text-section {
     line-height: 1.7em;
-    font-size: 1.6em;
+    font-size: 1.1em;
+    font-weight: 400;
   }
 }
 
 /* Footer area */
 
 footer {
+  $col: #333;
+  margin: 2em 0 1m 0;
   padding: 1em 0 1em 0;
-  color: $light-font-color;
-  color: white;
+  color: $col;
+  @include plainfont();
+  border-top: 1px solid #ddd;
+  font-size: 0.7em;
 
   a {
     text-decoration: underline;
-    color: white;
+    color: $col;
   }
 
   a:hover {
     text-decoration: underline;
-    color: white;
+    color: $col;
   }
 
   ul {
@@ -191,13 +215,11 @@ footer {
 
   h2 {
     margin: 0 0 0.5em 0;
-    text-transform: uppercase;
     font-size: 1.4em;
   }
 
   h3 {
     margin: 0 0 0.5em 0;
-    text-transform: uppercase;
     font-size: 1.2em;
   }
 
@@ -229,7 +251,7 @@ footer {
     }
 
     .title {
-      font-weight: 600;
+      @include headerfont();
       font-size: 1.1em;
     }
 
