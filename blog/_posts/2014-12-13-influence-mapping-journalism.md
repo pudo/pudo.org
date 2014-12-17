@@ -11,7 +11,7 @@ Building Grano started with a desire to map political and economic influences. D
 
 The question may sound like a no-brainer - understanding connectivities is key to good journalism - but it's actually surprisingly hard to answer.
 
-## Social Network Analysis and the Counting of Things
+### Social Network Analysis and the Counting of Things
 
 Terminology is one source of confusion. Academics refer to this sort of study of influence as *social network analysis* (SNA). The term has proven toxic in journalism for two reasons: first, the phrase *social networks* is largely associated with social media, like Facebook, LinkedIn and Twitter. Use the term, and people immediately expect you to calculate yet another influence score for perma-tweeting tech bloggers - not to explore corruption in government or to understand the globalized corporate structures of the extractive industries.
 
@@ -23,7 +23,7 @@ Undoubtedly, it is useful to understand some of the metrics which rank the main 
 
 The value of statistical network analysis is further reduced by the subject of our analysis: while we might sometimes be lucky to study a single, consistent database of company ownership, much more often, the data we're exploring is assembled through badly-used reporting mechanisms, and, sometimes, manual collection. Running statistics on these networks will unfortunately tell us much more about the way we got the data than about the subjects of our journalistic inquiry.
 
-## The Society of the Mind
+### The Society of the Mind
 
 Much of the appeal of networks as a tool for journalism comes from an intuitive resemblance between the notion of networks and the cognitive process of an investigation. Understanding who links to whom and what evidence there is for each connection is key to the forensics of social interaction. **Networks provide us with a great metaphor.**
 
@@ -33,7 +33,7 @@ After spending some time talking to investigative journalists, I believe the inf
 
 While I'm not sure that these categories can be separated without overlap, their main virtue is that they define activities, not data types. Looking at many existing influence mapping efforts, it seems clear that it's very easy to get caught in the hamster wheel of data collection without clearly defining why we need the data in the first place.
 
-## Searching
+### Searching
 
 Searching for information is fundamental to any kind of journalism. For investigative reporters, a large number of databases have appeared over the past few years: [OpenCorporates](http://opencorporates.com/), [Arachnys](https://arachnys.com/) or the many data catalogues governments across the world have published.
 
@@ -51,7 +51,7 @@ The best search, however, is one that you did not have to run. While pulling inf
 
 Tools like Google Alerts, [If This Then That](https://ifttt.com) and [Planning Alerts](http://www.planningalerts.org.au/) are already available, and the [BBC News Labs' DataStringers](https://source.opennews.org/en-US/articles/bbc-news-labs-datastringer/) project may provide alerts for a much larger set of journalistically relevant data in the future.
 
-## Connecting
+### Connecting
 
 Understanding connections between actors is what actually propels an investigation forward, and as I've mentioned before there are a lot of methods available within network analysis: finding the most prominent members of a network, unexpected links between a set of people or companies, or trends over time.
 
@@ -63,7 +63,7 @@ The display of network data in automatically laid-out **node graph diagrams usua
 
 Most commercial tools in this space, such as [IBM's i2](www.i2.co.uk/Products/analysts_notebook/default.asp#), and Palantir's Gotham therefore seem to focus on manually laid-out network graphs. Similarly, [VIS (Visual Investigative Scenarios)](http://vis.occrp.org) is an open source tool for mapping out an investigation by hand.
 
-## Remembering & Sharing
+### Remembering & Sharing
 
 Reg Chua, an Editor at Thomson Reuters, advocates the [idea of structured journalism](http://structureofnews.wordpress.com/structured-journalism/). His aim is to change journalism so that its results are re-usable pieces of knowledge, rather than stories that lose most of their value the day after their initial release. One way to achieve this, obviously, is to **structure stories as a hybrid between a narrative and an influence map**.
 
@@ -79,7 +79,7 @@ In this regard, it has been far more successful than similar projects like [Pode
 
 The final assertion - that structured journalism could also be a source of revenue - has not yet been proven. Many journalists we've spoken to have been very reluctant to share their research with business, whether it is for business intelligence, due diligence or other purposes. Finding an acceptable model seems challenging, but the chance to escape the online advertising market is attractive.
 
-## What we can build
+### What we can build
 
 Having explored these different types of activities in which influence mapping might benefit journalism, there still appear to be plenty of niches for new software tools: whether in terms of contextual search, graph exploration or public knowledge management. Unfortunately, the economics of open source software development won't allow us to go ahead and build the one tool to satisfy all of these use cases. That would probably cost a few million dollars and is more likely to fail than not. 
 

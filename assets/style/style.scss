@@ -20,8 +20,7 @@ $light-font-color: #999;
 
 @mixin headerfont() {
   @include plainfont();
-  font-weight: 800;
-  line-height: 1.8em;
+  line-height: 1.7em;
   margin-bottom: 0.6em;
 
   a {
@@ -47,6 +46,14 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   @include headerfont();
+}
+
+h1, h2 {
+  font-weight: 800;
+}
+
+h3, h4, h5, h6 {
+  font-weight: 400;
 }
 
 a {
@@ -252,7 +259,8 @@ footer {
 
     .title {
       @include headerfont();
-      font-size: 1.1em;
+      font-size: 1em;
+      font-weight: 400;
     }
 
     .description {
