@@ -13,7 +13,7 @@ Over the last few months, I've worked on a few such projects, for example with O
 
 I've also spoken about document mining for journalists, including this [presentation at the International Journalism Festival](http://www.journalismfestival.com/programme/2015/data-doesnt-grow-in-tables-dealing-with-large-sets-of-documents) in Perugia:
 
-<iframe width="700" height="400" src="https://www.youtube.com/embed/vb4U84BJKUk" frameborder="0" allowfullscreen></iframe><br>
+<div class='embed-container'><iframe src='http://www.youtube.com/embed/vb4U84BJKUk' frameborder='0' allowfullscreen></iframe></div>
 
 While each document mining project that I've been involved with has very custom needs, my goal has been to construct a set of re-usable applications that allow for fast and reproducible processing of documents.
 

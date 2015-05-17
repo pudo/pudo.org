@@ -7,20 +7,20 @@ $font-color: #333;
 $light-font-color: #999;
 
 @mixin textfont() {
-  font-family: 'Garamond', 'Georgia', serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.4em;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 @mixin plainfont() {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300; 
-  font-size: 0.9em;
+  //font-size: 0.9em;
 }
 
 @mixin headerfont() {
   @include plainfont();
-  line-height: 1.7em;
+  line-height: 1.5em;
   margin-bottom: 0.6em;
 
   a {
@@ -31,17 +31,13 @@ $light-font-color: #999;
 body {
   color: $font-color;
   @include textfont();
-  font-size: 20px;
-  //background-color: $primary-color;
-}
-
-.container-fluid {
-  padding-right: 5%;
-  padding-left: 5%;
+  font-size: 17px;
 }
 
 .container {
-  width: 700px;
+  max-width: 900px;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -53,7 +49,7 @@ h1, h2 {
 }
 
 h3, h4, h5, h6 {
-  font-weight: 400;
+  font-weight: 800;
 }
 
 a {
@@ -257,12 +253,6 @@ footer {
       color: $light-font-color;
     }
 
-    .title {
-      @include headerfont();
-      font-size: 1em;
-      font-weight: 400;
-    }
-
     .description {
       //text-indent: 0em;
       display: block;
@@ -306,4 +296,26 @@ footer {
 
 .standalone {
   margin-bottom: 1em;
+}
+
+
+// Responsive youtube embed
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow:
+  hidden;
+  max-width: 100%;
+  margin-bottom: 1em;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
