@@ -9,7 +9,7 @@ description: >
 
 When we discuss data journalism, we often tend to think of nicely formatted spreadsheets full of financial data or crime stats. Yet most journalistic source material does not take the form of tables, but it comes in messy collections of documents, whether on paper, or scraped off a web site.
 
-Over the last few months, I've worked on a few such projects, for example with OpenOil on [mining SEC filings for oil contracts](http://pudo.org/blog/2014/11/12/openoil-contracts.html), or with the [ICIJ](http://www.icij.org/project/world-bank) to find [World Bank documents related to project-related resettlements](http://www.icij.org/project/world-bank). In the process, I started to develop a set of Python libraries for document mining, and, eventually, a web-based document/entity search tool called [aleph](http://aleph.grano.cc).
+Over the last few months, I've worked on a few such projects, for example with OpenOil on [mining SEC filings for oil contracts](http://pudo.org/blog/2014/11/12/openoil-contracts.html), or with the [ICIJ](http://www.icij.org/project/world-bank) to find [World Bank documents on project-related resettlements](http://www.icij.org/project/world-bank). In the process, I started to develop a set of Python libraries for document mining, and, eventually, a web-based document/entity search tool called [aleph](http://aleph.grano.cc).
 
 I've also spoken about document mining for journalists, including this [presentation at the International Journalism Festival](http://www.journalismfestival.com/programme/2015/data-doesnt-grow-in-tables-dealing-with-large-sets-of-documents) in Perugia:
 
@@ -19,7 +19,7 @@ While each document mining project that I've been involved with has very custom 
 
 ### A Python-based document processing toolkit
 
-Two Python libraries, [archivekit](https://github.com/pudo/archivekit) and [loadkit](https://github.com/pudo/loadkit), form the core of this: [archivekit](https://github.com/pudo/archivekit) provides an abstraction for the storage of source documents, making sure that the original document is stored on Amazon's Simple Storage Service alongside any cleaned-up and converted versions of the same document.
+Two Python libraries, [archivekit](https://github.com/pudo/archivekit) and [loadkit](https://github.com/pudo/loadkit), form the core of this: [archivekit](https://github.com/pudo/archivekit) provides an abstraction for the storage of source documents, making sure that the original document is stored on Amazon's Simple Storage Service alongside any cleaned-up and converted versions of the same file.
 
 [loadkit](https://github.com/pudo/loadkit) builds on top of this layer by enabling users to configure custom document processing pipelines with support for text extraction (including OCR), normalisation and filtering. Since loadkit is also used by an updated version of [OpenSpending](http://openspending.org), [spendb](https://github.com/mapthemoney/spendb), to manage structured source data, it also supports extracting and normalising data from spreadsheets.
 
@@ -29,7 +29,7 @@ Together, these tools make it very easy to extract all documents from a web site
 
 ### aleph, an experiment in entity-based document mining
 
-With this foundation in place, I started developing another layer of tooling aimed at non-technical investigative journalists, rather than developers. The expectations of researchers were usually quite simple: most requests focus on searching a set of documents to generate leads that would then be checked by hand. More advanced queries would involve drilling down to relevant sub-sets using document metadata and mentions of dates, places and entities within the documents.
+With this foundation in place, I started developing another layer of tooling aimed at non-technical investigative journalists, rather than developers. The expectations of researchers were usually quite simple: most requests focus on searching a set of documents to generate leads that would then be checked by hand. Advanced queries would involve drilling down to relevant sub-sets using document metadata and mentions of dates, places and entities within the documents.
 
 The resulting prototype, [aleph](http://aleph.grano.cc) ([source code](https://github.com/pudo/aleph)), allows users to easily perform those tasks through a simple web interface. Based on archivekit and loadkit, the tool maintains two distinct types of datasets: document collections and entity lists.
 
@@ -45,9 +45,9 @@ Document collections can be sourced from a wide range of locations; existing cra
 Each document imported from one of these sources is tagged against the entities present in aleph's entity lists. Rather than relying on an out-of-the-box entity extraction service like Reuter's Calais, entity lists allow researchers to name more specific sets of things they might be interested in: local parliamentarians in a country, companies and directors relevant to a particular investigation etc. 
 
 <div class="captioned">
-    <img src="/assets/images/aleph2.png" class="img-responsive" alt="Aleph, showing actors"></a>
+    <img src="/assets/images/aleph3.png" class="img-responsive" alt="Aleph, editing entities"></a>
     <div class="caption">
-        Joint mentions of South African politicians in the collected reporting about the Nkandla scandal.
+        Editing entity lists for custom tagging of source documents
     </div>
 </div>
 
@@ -58,9 +58,9 @@ Finally, aleph also experiments with different ways of presenting the matching d
 This way, a researcher can apply a set of filters to the document list and then download all matching documents to work through them and document their findings in the same spreadsheet.
 
 <div class="captioned">
-    <img src="/assets/images/aleph3.png" class="img-responsive" alt="Aleph, editing entities"></a>
+    <img src="/assets/images/aleph2.png" class="img-responsive" alt="Aleph, showing actors"></a>
     <div class="caption">
-        Editing entity lists for custom tagging of source documents
+        Joint mentions of South African politicians in the collected reporting about the Nkandla scandal.
     </div>
 </div>
 
