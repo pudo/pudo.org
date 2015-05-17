@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A toolkit for mining documents"
+title: "Data doesn't grow in tables: harvesting journalistic insight from documents"
 author: Friedrich Lindenberg
 opennews: false
 description: >
