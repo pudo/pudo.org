@@ -8,7 +8,7 @@ $light-font-color: #999;
 
 @mixin textfont() {
   font-family: 'Open Sans', sans-serif;
-  line-height: 1.4em;
+  line-height: 1.3em;
   font-weight: 300;
 }
 
@@ -88,7 +88,7 @@ code {
 
 #page {
   background-color: white;
-  padding: 2em 0 2em 0;
+  padding: 1em 0 2em 0;
 }
 
 
@@ -180,8 +180,8 @@ footer {
   }
 
   h3 {
-    margin: 0.5em 0 0.5em 0;
-    font-size: 1.2em;
+    margin: 0.5em 0 0.2em 0;
+    font-size: 1.1em;
   }
 
   ul {
