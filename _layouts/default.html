@@ -22,35 +22,21 @@
   </head>
   <body>
     <div id="page">
-      {% include nav.html %}
-      
       <div id="airlock" class="container-fluid">
-        {{ content }}
+        <div class="row">
+          <div class="col-sm-10 col-sm-push-2">{{ content }}</div>
+          <div class="col-sm-2 col-sm-pull-10">{% include menu.html %}</div>
+        </div>
       </div>
     </div>
 
     <footer class="hidden-print">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-8">
-            <p>
-              Hi! I'm a software developer and data wrangler working on
-              methods to support effective journalism, activism and civic participation.
-            </p>
-            <p>
-              As a Knight International Journalism Fellow, I work with
-              <a href="http://codeforafrica.org">Code for Africa</a> and the
-              <a href="http://investigativecenters.org">African Network of Centers for Investigative Reporting</a>
-              to build data-driven tools for journalism.
-            </p>
-            <p>
-              In 2013, I was a <a href="http://mozillaopennews.org">Knight-Mozilla Fellow</a>,
-              working in the newsroom of <a href="http://spiegel.de">Spiegel Online</a>.
-              Previously, I contributed to many projects of the <a href="http://okfn.org">Open
-              Knowledge Foundation</a> and <a href="http://liqd.net">Liquid Democracy</a>.
-            </p>
+          <div class="col-md-9 col-md-offset-2">
+            {% include bio.html %}
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <ul>
               <li>
                 <a href="mailto:friedrich@pudo.org">
@@ -70,7 +56,7 @@
                   github.com/pudo
                 </a>
               </li>
-              <li>
+              <!--li>
                 <a href="https://facebook.com/flindenberg">
                   <i class="fa fa-facebook-square"></i>
                   facebook.com/flindenberg
@@ -81,7 +67,7 @@
                   <i class="fa fa-skype"></i>
                   friedrich.cleversoft
                 </a>
-              </li>
+              </li-->
               <li>
                 <a href="/about/key.gpg">
                   <i class="fa fa-key"></i>
