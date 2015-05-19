@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: page
 fullsize: false
 title: Civic Software Checklist
 category: Making Software

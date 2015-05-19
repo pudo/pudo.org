@@ -1,49 +1,96 @@
 ---
 ---
 
-$primary-color: #BA4B37;
-$primary-color: #4489ca;
+$primary-color: #ca0404;
+//$primary-color: #4489ca;
 $font-color: #333;
 $light-font-color: #999;
 
-@mixin textfont() {
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.3em;
-  font-weight: 300;
-}
 
 @mixin plainfont() {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300; 
-  //font-size: 0.9em;
+  font-weight: 300;
+}
+
+@mixin textfont() {
+  @include plainfont();
+  line-height: 1.3em;
+}
+
+@mixin smalltext() {
+  line-height: 1.5em;
+  font-size: 0.9em;
 }
 
 @mixin headerfont() {
   @include plainfont();
-  line-height: 1.5em;
+  line-height: 1.6em;
   margin-bottom: 0.6em;
-  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 
   a {
     text-decoration: none;
   }
 }
 
+@mixin banner($banner-col) {
+  line-height: 1.7em;
+  padding: 0.5em 1em 0.5em 1em;
+  margin-bottom: 1em;
+  color: white;
+  background-color: $banner-col;
+  display: inline-block;
+}
+
+
 body {
   color: $font-color;
   @include textfont();
   font-size: 18px;
-}
-
-.container {
-  max-width: 900px;
-  padding-right: 5%;
-  padding-left: 5%;
+  border-top: 0.5em solid $primary-color;
 }
 
 h1, h2, h3, h4, h5, h6 {
   @include headerfont();
 }
+
+.page-banner {
+  @include banner($primary-color);
+}
+
+.side-banner {
+  @include banner($light-font-color);
+}
+
+h1 {
+  margin: 0.5em 0 0.5em 0;
+  font-size: 1.4em;
+}
+
+h2 {
+  margin: 0.5em 0 0.5em 0;
+  font-size: 1.2em;
+}
+
+h3 {
+  margin: 0.5em 0 0.2em 0;
+  font-size: 1.1em;
+}
+
+ul {
+  list-style-type: square;
+  /* padding: 0; */
+
+  li {
+    /* margin: 0 0 10px; */
+  }
+}
+
+ul.menu {
+  list-style-type: none;
+}
+
 
 a {
   color: $primary-color;
@@ -64,6 +111,7 @@ code {
 }
 
 // Logo
+/*
 .logo {
   margin-top: 0.5em;
   font-family: Verdana, sans-serif;
@@ -85,22 +133,33 @@ code {
     -ms-transform: rotate($angle);
   }
 }
+*/
 
 #page {
-  background-color: white;
   padding: 1em 0 2em 0;
 }
 
 
 /* Navbar area */
 #menu {
-  li {
-    font-weight: 800;
-    text-transform: uppercase;
-    a {
-      text-decoration: none;
-    }
+  margin-top: 0.7em;
+
+  ul.nav.nav-pills {
+    li {
+      font-weight: 800;
+      text-transform: uppercase;
+      a {
+        text-decoration: none;
+        color: $font-color;
+
+        &:hover {
+          background-color: transparent;
+          color: $primary-color;
+        }
+      }
+    }  
   }
+  
 }
 
 /* Home page intro */
@@ -132,12 +191,12 @@ code {
 footer {
   $col: #333;
   @include plainfont();
+  @include smalltext();
 
   margin: 2em 0 1m 0;
   padding: 1em 0 1em 0;
   color: $col;
   border-top: 1px solid #ddd;
-  font-size: 0.9em;
 
   a {
     text-decoration: underline;
@@ -166,75 +225,58 @@ footer {
 
 
 /* Front page listings */
+.section {
+  margin: -0.4em 0 2em 0;
+}
 
-#airlock {
-  margin-top: 1em;
+.entries {
+  list-style-type: none;
+  padding: 0;
 
-  .section {
-    margin: -0.4em 0 2em 0;
+  li {
+    //text-indent: -3em;
+    //padding-left: 3em;
+    padding-bottom: 1em;
   }
 
-  h2 {
-    margin: 0.5em 0 0.5em 0;
-    font-size: 1.4em;
+  .date {
+    color: $light-font-color;
   }
 
-  h3 {
-    margin: 0.5em 0 0.2em 0;
-    font-size: 1.1em;
+  .description {
+    //text-indent: 0em;
+    display: block;
+  }
+}
+
+.sidebar {
+  @include smalltext();
+
+  a {
+    text-decoration: none;
   }
 
   ul {
-    list-style-type: square;
-    /* padding: 0; */
-
-    li {
-      /* margin: 0 0 10px; */
-    }
-  }
-
-  ul.menu {
-    list-style-type: none;
-  }
-
-  .entries {
-    list-style-type: none;
+    //margin: 0;
     padding: 0;
-
-    li {
-      //text-indent: -3em;
-      //padding-left: 3em;
-      padding-bottom: 1em;
-    }
-
-    .date {
-      color: $light-font-color;
-    }
-
-    .description {
-      //text-indent: 0em;
-      display: block;
-    }
+    list-style-type: none;
   }
+
 }
+
 
 /* Post page */
-
 .post-date {
   color: $light-font-color;
-}
-
-.related-posts {
-  
-}
-
-#post ul {
-  padding: 0 0 0 2em;
 }
 
 #post {
   a {
     text-decoration: none;
+  }
+
+  ul {
+    padding: 0 0 0 2em;
   }
 }
 
