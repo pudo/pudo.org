@@ -1,6 +1,5 @@
 ---
-layout: page
-fullsize: false
+layout: wrap
 title: Civic Software Checklist
 category: Making Software
 permalink: /projects/checklist/

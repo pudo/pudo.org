@@ -35,12 +35,18 @@ $light-font-color: #999;
 }
 
 @mixin banner($banner-col) {
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.7em;
   padding: 0.5em 1em 0.5em 1em;
   margin-bottom: 1em;
   color: white;
   background-color: $banner-col;
   display: inline-block;
+
+  a, a:hover {
+    color: white;
+    text-decoration: underline;
+  }
 }
 
 
@@ -59,7 +65,11 @@ h1, h2, h3, h4, h5, h6 {
   @include banner($primary-color);
 }
 
-.side-banner {
+.sub-banner {
+  @include banner($light-font-color);
+}
+
+.text-banner {
   @include banner($light-font-color);
 }
 
@@ -94,7 +104,8 @@ ul.menu {
 
 a {
   color: $primary-color;
-  text-decoration: underline;
+  //text-decoration: underline;
+  text-decoration: none;
 }
 
 a:hover {
