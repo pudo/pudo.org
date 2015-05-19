@@ -10,12 +10,9 @@ home: true
 
 <div class="row">
   <div class="col-md-8 col-sm-12">
-    <ul class="entries">
-      {% for post in paginator.posts %}
-        {% include postlink.html post=post %}
-      {% endfor %}
-    </ul>
-    
+    {% for post in site.categories.blog limit:8 %}
+      {% include postlink.html post=post %}
+    {% endfor %}
     <i class="fa fa-rss-square"></i> <a href="/atom.xml">Subscribe now</a> &middot;
     <a href="/blog">See earlier posts &raquo;</a>
   </div>

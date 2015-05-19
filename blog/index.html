@@ -1,11 +1,17 @@
 ---
 layout: page 
-title: A list of things I have blogged about
+title: What I have written about
 ---
 
-<ul class="entries">
-  {% for post in site.categories.blog %}
-    {% include postlink.html post=post %}
-  {% endfor %}
-</ul>
+<div class="row">
+{% for post in site.categories.blog %}
+  {% assign loopindex = forloop.index | modulo: 2 %}
+  
+  {% if loopindex == 1 %}
+    </div>
+    <div class="row">
+  {% endif %}
+  <div class="col-md-6">{% include postlink.html post=post %}</div>
 
+{% endfor %}
+</div>

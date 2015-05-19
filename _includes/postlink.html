@@ -1,5 +1,5 @@
 
-<li class="entry {{ include.post.categories }}">
+<div class="entry {{ include.post.categories }}">
   {% if include.post.categories contains "blog" and post.unlisted != true %}
     <h3 class="title"><a href="{{ include.post.url }}">{{ include.post.title }}</a></h3>
     <span class="description">
@@ -7,6 +7,6 @@
       {{ include.post.description }}
     </span>
   {% endif %}
-</li>
+</div>
 
 

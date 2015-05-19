@@ -24,7 +24,7 @@ $light-font-color: #999;
 
 @mixin headerfont() {
   @include plainfont();
-  line-height: 1.6em;
+  line-height: 1.5em;
   margin-bottom: 0.6em;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -98,7 +98,9 @@ a {
 }
 
 a:hover {
-  color: lighten($primary-color, 10%);
+  //color: lighten($primary-color, 10%);
+  color: $light-font-color;
+  text-decoration: none;
 }
 
 .clean a {
@@ -159,7 +161,24 @@ code {
       }
     }  
   }
-  
+
+  @media (max-width: 970px) {
+    li {
+      display: inline-block;
+      a {
+        display: inline-block;
+        margin-bottom: 1em;
+      }
+    }
+  }
+
+  @media (max-width: 400px) {
+    li {
+      a {
+        font-size: 0.6em;
+      }
+    }
+  }
 }
 
 /* Home page intro */
@@ -226,29 +245,19 @@ footer {
 
 
 /* Front page listings */
-.section {
-  margin: -0.4em 0 2em 0;
-}
-
-.entries {
-  list-style-type: none;
-  padding: 0;
-
-  li {
-    //text-indent: -3em;
-    //padding-left: 3em;
-    padding-bottom: 1em;
-  }
+.entry {
+  padding-bottom: 1em;
 
   .date {
     color: $light-font-color;
+    font-weight: 700;
   }
 
   .description {
-    //text-indent: 0em;
     display: block;
   }
 }
+
 
 .sidebar {
   @include smalltext();
