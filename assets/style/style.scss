@@ -157,6 +157,13 @@ code {
 #menu {
   margin-top: 0.7em;
 
+  img {
+    margin-bottom: 2em;
+    border-radius: 50%;
+    width: 80%;
+    -webkit-filter: grayscale(100%); filter: grayscale(100%);
+  }
+
   ul.nav.nav-pills {
     li {
       font-weight: 800;
