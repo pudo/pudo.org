@@ -1,6 +1,6 @@
 ---
 layout: page
-title: How does the European Union spend it's money?
+title: How does the European Union spend its money?
 category: Data Expeditions
 material: true
 description: >

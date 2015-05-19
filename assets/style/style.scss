@@ -180,7 +180,11 @@ code {
     }  
   }
 
-  @media (max-width: 970px) {
+  @media (max-width: 980px) {
+    img {
+      display: none;
+    }
+
     li {
       display: inline-block;
       a {
@@ -288,6 +292,10 @@ footer {
     //margin: 0;
     padding: 0;
     list-style-type: none;
+
+    li {
+      margin-bottom: 1em;
+    }
   }
 
 }
