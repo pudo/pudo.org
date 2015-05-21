@@ -36,7 +36,7 @@ standard. They are probably not true:
   there, your job is to *empower others*.
 
 * Many **people will develop tools and platforms** to handle your data. You
-  will not be stuck having to pay for your own *tools ecosystem* for the
+  will not be stuck having to pay for your own *ecosystem* for the
   next fifteen years. The tools will actually work with data published
   by different sources.
 
