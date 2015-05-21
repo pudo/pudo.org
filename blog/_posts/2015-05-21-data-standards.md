@@ -53,7 +53,8 @@ standard. They are probably not true:
 * A standard is **the best way of publishing data**. Having a centralized
   API that actually works and has data quality assurance built in would
   be some sort of tech imperialism. The coordination cost of spreading
-  data all over the web and collecting it upon use is lower.
+  data all over the web and collecting it upon use is lower. Choose CKAN.
+  Choose life.
 
 * All **data analysis problems are global**. You need a standard before you
   can derive knowledge from data. As your data scales, the analytical
