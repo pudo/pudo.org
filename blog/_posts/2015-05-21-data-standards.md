@@ -41,8 +41,8 @@ standard. They are probably not true:
   by different sources.
 
 * The **economics of standardization always work out**. This is true even
-  when to date, nobody has been using the data (they will be able to do
-  that more effectively now). When evaluating gains, think about Nairobi
+  when to date, nobody has been using the data. They will be able to do
+  that more effectively now. When evaluating gains, think about Nairobi
   startups, not your own organisation.
 
 * Your committee is the **centre of the known universe**. It is your duty to
@@ -53,8 +53,7 @@ standard. They are probably not true:
 * A standard is **the best way of publishing data**. Having a centralized
   API that actually works and has data quality assurance built in would
   be some sort of tech imperialism. The coordination cost of spreading
-  data all over the web and collecting it upon use is lower. Choose CKAN.
-  Choose life.
+  data all over the web and collecting it upon use is lower.
 
 * All **data analysis problems are global**. You need a standard before you
   can derive knowledge from data. As your data scales, the analytical
