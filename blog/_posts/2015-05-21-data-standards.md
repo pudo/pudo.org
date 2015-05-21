@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "8 Stupid Things you probably believe about your Data Standard"
+title: "8 things you probably believe about your data standard"
 author: Friedrich Lindenberg
 opennews: false
 description: >
