@@ -61,3 +61,9 @@ standard. They are probably not true:
   different contexts. 
 
 Have I missed any?
+
+**UPDATE** Nice addition from [Tom](https://twitter.com/tlongers/status/601353318036852736):
+
+* Your five-year open consultation process, weekly calls, high-level
+  steering group and working panels will galvanize support and create a
+  better standard.
