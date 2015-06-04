@@ -4,7 +4,7 @@ title: "On Hacks/Hackers, Google and community building"
 author: Friedrich Lindenberg
 opennews: false
 description: >
-  
+  A few weeks ago, the US team of Hacks/Hackers announced their plans to turn the network of journalism innovators into a collaboration with Google News Labs, starting with an event in Berlin. I tweeted about this, and Phillip Smith wrote a thoughtful reaction. Given this invitation to debate, I wanted to outline my criticism in more detail.
 ---
 
 *A few weeks ago, the US team of Hacks/Hackers [announced their plans](http://www.poynter.org/news/mediawire/346061/hackshackers-and-the-news-lab-at-google-team-up/) to turn the network of journalism innovators into a collaboration with Google News Labs, starting with an event in Berlin. I [tweeted about this](https://twitter.com/pudo/status/601405937560203264), and today, Phillip Smith wrote a thoughtful reaction titled [What is Hacks/Hackers?](http://phillipadsmith.com/2015/06/what-is-hacks-hackers.html) Given this invitation to debate, I wanted to outline my criticism in more detail, too.*
