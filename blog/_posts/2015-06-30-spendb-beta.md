@@ -24,6 +24,8 @@ The two most obvious changes are the re-designed user interface with a much simp
 
 This makes it easy to upload a CSV or Excel file, validate its contents, model the data and then run some rudimentary analysis within minutes. It also means the API to drive third-party applications is now well-tested and stable, as today it will begin to be used by [OffenerHaushalt](http://offenerhaushalt.de/) as it's backend.
 
+<div class='embed-container'><iframe src='https://www.youtube.com/embed/ol-6FZ4msig' frameborder='0' allowfullscreen></iframe></div>
+
 Unlike OpenSpending, I don't expect SpenDB to be used only as a hosted service. The tool is easy to install and can be customized and used for parts. If you're interested working with the project - as a user or contributor, give me a shout or join the [Gitter chat](https://gitter.im/pudo/spendb).
 
 Finally, for the more technically inclined, a more thorough list of major changes:
@@ -39,3 +41,4 @@ With all of this infrastructure work done, I'm hoping for the next steps of this
 
 Finally, I want to tackle the big one: [OpenTED](http://ted.openspending.org/), which currently exists mainly as a collection of CSV files, will hopefully gain an accessible query interface so that journalists and researchers can more easily approach it. 
 
+Obviously, I'd love to learn more about how other users would want to see the tool evolve, and to [accept any pull requests and changes](https://github.com/pudo/spendb)!
