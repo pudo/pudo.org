@@ -1,0 +1,92 @@
+---
+layout: page
+material: true
+title: An open database of persons and entities of interest
+category: Working with journalists
+description:
+  This dataset with names and details of persons of interest (both political
+  figures and entities connected to criminal and terrorist activity) can be
+  used for basic due diligence and journalistic research, e.g. to
+  cross-reference with leaked databases.
+keywords: pep, politically exposed persons, persons of interest, data, csv, excel
+---
+
+<div class="row">
+  <div class="col-md-6">
+    <p>
+      This dataset combines <strong>names and details for persons and entities of
+      interest</strong>. Such entities include political leaders as well as entities
+      sanctioned by various governemnt, or those barred from public procurement.
+    </p>
+    <h3>Why would this be useful?</h3>
+    <p>
+      Let's say you've received a leaked database, document stash or fresh open data
+      release that you'd like to dig through. The next question is: what are you
+      going to search for? This dataset gives a possible answer: cross-referencing
+      with sanctions lists and names of political leaders should help to produce
+      leads.
+    </p>
+    <h3>What are your sources?</h3>
+    <p>
+      Glad you asked. As of 8. December 2015, these sources are included:
+    </p>
+    <ul>
+      <li>USA: Treasury/OFAC, <a href="https://www.treasury.gov/resource-center/sanctions/SDN-List/Pages/default.aspx">Specially Designated Nationals</a>, <a href="https://www.treasury.gov/resource-center/sanctions/SDN-List/Pages/consolidated.aspx">Consolidated List</a>; CIA <a href="https://www.cia.gov/library/publications/resources/world-leaders-1/index.html">World Leaders</a>; BIS/Commerce <a href="https://www.bis.doc.gov/index.php/policy-guidance/lists-of-parties-of-concern/denied-persons-list">Denied Persons</a>.
+      </li>
+      <li>GB/UK: HM Treasury <a href="https://www.gov.uk/government/publications/financial-sanctions-consolidated-list-of-targets/consolidated-list-of-targets">Sanctions Consolidated List</a>.</li>
+      <li>European External Action Service <a href="http://eeas.europa.eu/cfsp/sanctions/consol-list/index_en.htm">Consolidated Lists</a>.</li>
+      <li>Ukraine State Financial Monitoring Service <a href="http://www.sdfm.gov.ua/articles.php?cat_id=87&lang=en">Blacklist</a>.</li>
+      <li>Swiss State Secretariat for Economic Affairs (SECO) <a href="http://www.seco.admin.ch/themen/00513/00620/index.html?lang=en">Sanctions List</a>.</li>
+      <li>UN Security Council <a href="https://www.un.org/sc/suborg/en/sanctions/un-sc-consolidated-list">Consolidated List</a>.</li>
+      <li>World Bank <a href="http://web.worldbank.org/external/default/main?contentMDK=64069844&menuPK=116730&pagePK=64148989&piPK=64148984&querycontentMDK=64069700&theSitePK=84266">Debarred suppliers for procurement</a>.</li>
+      <li>MySociety's <a href="http://everypolitician.org">EveryPolitician.org</a>.</li>
+    </ul>
+    <p>
+      If you know of further sources of relevant data and openly available data -
+      particularly with regards to families of politically exposed persons, please
+      <a href="https://github.com/pudo/opennames/issues">suggest them on GitHub</a>
+      or <a href="mailto:friedrich@pudo.org">email me</a>.
+    </p>
+    <h3>Can this dataset be used freely?</h3>
+    <p>
+      Hopefully. While care is taken not to violate commerical copyrights, databases
+      included in this dataset might carry unexpected claims of copyright by the
+      institutions which provide them. YMMV.
+    </p>
+  </div>
+
+  <div class="col-md-6">
+    <h2>Downloads</h2>
+    <p>
+      Currently, the database is distributed as a set of downloads which are updated
+      regularly. In the future, I hope to also provide additional services, such as
+      an OpenRefine Reconciliation API.
+    </p>
+
+    <h4><a href="http://archive.pudo.org/opennames/latest/full.xlsx">full.xlsx</a> [13MB] - main list</h4>
+    <p>
+      This file contains entities from all sources, as well as sheets to indicate
+      alternate names (aka's), identification documents and known addresses. The
+      individual sheets are available as CSV files, as well:
+    </p>
+    <ul>
+      <li><a href="http://archive.pudo.org/opennames/latest/full.entities.csv">full.entities.csv</a> - base data, e.g. name, source, date and place of birth, descriptions etc.</li>
+      <li><a href="http://archive.pudo.org/opennames/latest/full.other_names.csv">full.other_names.csv</a> - a list of alternate names, aka's and spelling variants.</li>
+      <li><a href="http://archive.pudo.org/opennames/latest/full.identities.csv">full.identities.csv</a> - a list of associated documents, i.e. passports, ID numbers.</li>
+      <li><a href="http://archive.pudo.org/opennames/latest/full.addresses.csv">full.addresses.csv</a> - a list of known addresses. No geocoding.</li>
+    </ul>
+
+    <h4><a href="http://archive.pudo.org/opennames/opennames-latest.tgz">opennames-latest.tgz</a> [45MB] - full bundle</h4>
+    <p>
+      This package contains the database as Excel and CSV files, individual files for
+      each data source and the original source data as downloaded before processing.
+    </p>
+
+    <h4>it's open source, y'all.</h4>
+    <p>
+      The extraction, transformation and cleaning code for this project is <a href="https://github.com/pudo/opennames">available on GitHub</a> and can be replicated using Docker. Please
+      consider contributing additional lists and ideas for how to make this project 
+      more useful.
+    </p>
+  </div>
+</div>
