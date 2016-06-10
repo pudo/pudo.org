@@ -9,23 +9,21 @@ description: >
     for content extraction and regular expressions in Sublime Text as an advanced search tool.
 ---
 
-How can journalists search and analyze collections of documents on their own computers with simple tools? At last weekend's DataHarvest, [Robert](https://t.co/rYOJ7vfo4s) and I ran a workshop trying to answer that question. Since people were seemed interested, I decided to do a write-up to cover the two key tools we worked with: Apache Tika for content extraction and regular expressions in Sublime Text as an advanced search tool.
+How can you search and analyze collections of documents on your own computers with simple tools? At last weekend's DataHarvest, [Robert](https://t.co/rYOJ7vfo4s) and I ran a workshop to answer that question. As people were seemed interested, here's a write-up of the two key tools we worked with: Apache Tika for content extraction and regular expressions in Sublime Text as an advanced search tool.
 
-So, here's the scenario: a source has given you a USB drive, filled with all the proof you need for a great story. Or, perhaps, you used [DownThemAll!](http://www.downthemall.net/), [wayback machine downloader](https://github.com/hartator/wayback-machine-downloader) or [wget](https://en.wikipedia.org/wiki/Wget) to grab a bunch of documents from a government web site that you want to sift through.
+So, here's the scenario: a source has given you a USB drive, filled with all the proof you need for a great story. Or, perhaps, you used [DownThemAll!](http://www.downthemall.net/), [wayback machine downloader](https://github.com/hartator/wayback-machine-downloader) or [wget](https://en.wikipedia.org/wiki/Wget) to grab a bunch of documents from a government web site. In any case: we'll assume that you've got a folder docs you want to sift through! (If you don't, [here's something to play with](http://data.pudo.org/misc/journo-document-toolkit.zip): a collection of all the sanctions issues by the European Union.)
 
-Let's assume that you've got a folder docs - if you don't [here's something to play with](http://data.pudo.org/misc/journo-document-toolkit.zip): a collection of all the sanctions issues by the European Union.
+What's next? You'll probably to search the documents for the names of people and companies, find mentions of dates to construct a timeline, or perhaps you'll want to search for details like bank account numbers or email addresses?
 
-But what's next? You may need to search the documents for the names of people and companies, find mentions of dates to construct a timeline, or perhaps you want to search for details like bank account numbers or email addresses?
-
-Of course, you can go and buy NUIX for a few thousand bucks, or try to find out which [desktop search engine](https://en.wikipedia.org/wiki/List_of_search_engines#Desktop_search_engines) is the least crap (hint: they all are). Before you do that, though, why not try a few free, simple tools?
+Of course, you can go and buy NUIX for a few thousand bucks. Or you can try to find out which [desktop search engine](https://en.wikipedia.org/wiki/List_of_search_engines#Desktop_search_engines) is the least crap (hint: they all are). Before you do these things, though, why not try how far you can get with a few free, simple tools?
 
 ## Converting documents to text
 
-The first hurdle you'll have to overcome has to do with how computers store data. When you make Word documents, PDFs, presentations or spreadsheets, the program doesn't just need to store text, but also a lot of information about layout, who's been editing what and so on.
+The first hurdle you'll have to overcome has to do with how computers store data. When you make Word documents, PDFs, presentations or spreadsheets, the program doesn't just need to store text. It also has to keep a lot of information about layout, who's been editing what and so on.
 
-To store this data, applications encode documents in complex file formats. This makes it hard to search a bunch of those files at once without opening each using it's own program. Instead, we're going to convert all of your source documents into plain text documents: files that contain nothing but text - no layout, no track changes, no images. 
+To store this data, applications encode documents in complex file formats. This makes it hard to search a many of those files at once without opening each using it's own program. To do that, we're going to convert all of your source documents into plain text documents: files that contain nothing but text - no layout, no track changes, no images. 
 
-[Apache Tika](http://tika.apache.org/) does just that. It's a Java program that recognizes many types of documents and pulls out the text. It's the engine that ICIJ used to make the Panama Papers accessible.
+[Apache Tika](http://tika.apache.org/) does just that. It's a Java program that recognizes many types of documents and pulls out the text into a new file. It's also the engine that ICIJ used to make the Panama Papers accessible.
 
 <div class="captioned">
     <img src="/assets/images/tika_cli.png" class="img-responsive" alt="Tika doing Tika">
@@ -34,9 +32,9 @@ To store this data, applications encode documents in complex file formats. This 
     </div>
 </div>
 
-In order to use it for yourself, though, you'll need to know a little bit about how to use your computer's command line prompt. On a Mac, that's the Terminal - while on Windows, it's cmd.exe. I recommend you learn how to visit a particular directory, and how to see what's in a particular folder. Here's a tutorial [for the Mac](http://mac.appstorm.net/how-to/utilities-how-to/how-to-use-terminal-the-basics/) and one [for Windows](http://www.cs.princeton.edu/courses/archive/spr05/cos126/cmd-prompt.html). There's also [session notes](https://github.com/arc64/dataharvest-2016-commandline) from Annabel's DataHarvest workshop.
+In order to use it for yourself, you'll need to know a little bit about how to use your computer's command line prompt. On a Mac, that's the ``Terminal``. On Windows, it's ``cmd.exe`` (the DOS prompt). I recommend you learn how to visit a particular directory, and how to see what's in a particular folder. Here's a tutorial [for the Mac](http://mac.appstorm.net/how-to/utilities-how-to/how-to-use-terminal-the-basics/) and one [for Windows](http://www.cs.princeton.edu/courses/archive/spr05/cos126/cmd-prompt.html). There's also [session notes](https://github.com/arc64/dataharvest-2016-commandline) from Annabel's DataHarvest workshop about command-line data processing.
 
-Before Tika can do it's magic, you need to install the Java Runtime Environment from the [Oracle website](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html). Additionally, download the ``tika-app`` file from [Tika's home page](https://tika.apache.org/download.html). Put it in a directory with a memorable path, e.g. ``C:\tika\tika-app-1.13.jar`` on Windows or ``/Users/yourname/tools/tika-app-1.13.jar`` on a Mac (the version number might differ, adjust for that).
+Before Tika can do it's magic, you also need to install the Java Runtime Environment from the [Oracle website](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html). Once it's installed, download the ``tika-app`` file from [Tika's home page](https://tika.apache.org/download.html). Put it in a directory with a memorable path, e.g. ``C:\tika\tika-app-1.13.jar`` on Windows or ``/Users/yourname/tools/tika-app-1.13.jar`` on a Mac (the version number might differ, adjust for that).
 
 Then you can run Tika like this (the dollar sign is to symbolize a command prompt on a Mac):
 
@@ -44,7 +42,7 @@ Then you can run Tika like this (the dollar sign is to symbolize a command promp
 $ java -jar /Users/pudo/tools/tika-app-1.13.jar —help
 ```
 
-The bit up till ``tika-app-1.13.jar`` is just to run tika. After that, you can give a number of options that instruct the tool about the specific operation you want to run. ``—help`` is what I used to get the help text about all the other options. 
+The bit up till ``tika-app-1.13.jar`` is just to run tika. After that, you can give a number of options that instruct the tool about the specific operation you want to run. ``—help`` is a special option to show you the help text about all the other options. 
 
 Based on the output of ``-help``, you can devise new commands, like:
 
@@ -53,25 +51,25 @@ $ cd /Users/pudo/project/
 $ java -jar /Users/pudo/tools/tika-app-1.13.jar -t -i folder_with_documents -o output_files_folder
 ```
 
-The ``-t`` means: convert the files to text. After that, ``-i`` followed by a directory name gives the input directory with the original documents. ``-o`` is followed by the name of an output directory for the resulting text files. This will be created automatically.
+The ``-t`` means: convert the files to text. After ``-t``, the second option ``-i`` is followed by a directory name and gives the input directory with the original documents. Finally, ``-o`` is followed by the name of an output directory for the resulting text files. This will be created automatically.
 
-This will generate a new folder (``documents_text``) with all the documents converted to plain text. If you also want to look at the metadata (author, ...), you will want to run something like this instead:
+Once you run this command, it will generate a new folder (``documents_text``) with all the documents converted to plain text. If you also want to look at the metadata (author, ...), you will want to run something like this instead:
 
 ```bash
 $ java -jar /Users/pudo/tools/tika-app-1.13.jar -m -i folder_with_documents -o output_metadata_folder
 ```
 
-This will again create a bunch of text files, this time with metadata. 
+This will again create a bunch of text files, this time with metadata like the author, creation date and size for each document. 
 
-Note that this by itself does not handle images and image-PDFs. For that, you’ll need to install [Tesseract](https://github.com/tesseract-ocr/tesseract/wiki), an OCR tool. I haven’t found a simple write-up for how Tika and Tesseract work together yet, hopefully I'll get around to that soon. If you’re feeling lucky, [here’s a page about it](https://wiki.apache.org/tika/TikaOCR). 
+Note that this by itself does not handle images and image-based PDFs. For that, you’ll need to install [Tesseract](https://github.com/tesseract-ocr/tesseract/wiki), an OCR tool. I haven’t found a simple write-up for how Tika and Tesseract work together yet, hopefully I'll get around to that soon. If you’re feeling lucky, [here’s a page about it](https://wiki.apache.org/tika/TikaOCR). 
 
 ## Searching for patterns
 
-After running Tika, you'll end up with a folder full of text files, each named after the PDF, Word document or Powerpoint from which they're extracted. Next, you'll probably want to search them. For that, rather than using a fancy search engine, we'll use [Sublime Text](https://www.sublimetext.com). You can [download it for free](https://www.sublimetext.com/3).
+After running Tika, you'll end up with a folder full of text files, each named after the PDF, Word document or Powerpoint from which they're extracted. Now, you'll probably want to search them. For that, rather than using a fancy search engine, we'll use a text editor, [Sublime Text](https://www.sublimetext.com). You can [download it for free](https://www.sublimetext.com/3).
 
 What makes Sublime different from a program like Word is that it's specialised in dealing with plain text files without any layout or other binary content (try opening a Word or PDF file in Sublime, it'll show up as a messy set of random letters and numbers).
 
-Once you've installed and opened Sublime, you'll be shown a dark gray window. Click ``File > Open...`` and select the output folder generated by Tika. A sidebar will pop up and show you a list of all the extracted files. Next, select ``Find -> Find in files...`` from the main menu. A set of controls will show up at the bottom of the window. Those allow you to search across all files. Try it out by pressing the ``...`` next to the ``Where`` field, and selecting ``Add open folders``. In the ``Find`` field, you can type in any search term and see a list of matching documents show up in the window above.
+Once you've installed and opened Sublime, you'll see a dark gray window. Click ``File > Open...`` and select the output folder generated by Tika. A sidebar will pop up and show you a list of all the extracted files. Next, select ``Find -> Find in files...`` from the main menu. A set of controls will show up at the bottom of the window. Those allow you to search across all files. Try it out by pressing the ``...`` next to the ``Where`` field, and selecting ``Add open folders``. In the ``Find`` field, you can type in any search term and see a list of matching documents show up in the window above.
 
 <div class="captioned">
     <img src="/assets/images/sublime_search.png" class="img-responsive" alt="Sublime text search across files">
@@ -98,7 +96,9 @@ The first thing we're going to look at is making text optional using patterns. L
 terror.*
 ```
 
-This will match all lines that contain "terror", "terorrism", "terrorist". You'll note the little dot and asterisk at the end. Those are regular expressions wildcards: the dot means "match any character", the asterisk says "repeat the previous pattern many times". It's important to understand that these wildcards apply to individual characters - they have no notion of words.
+This will match all lines that contain "terror", "terorrism", "terrorist". You'll note the little dot and asterisk at the end. Those are regular expressions operators: the dot means "match any character", the asterisk says "repeat the previous pattern many times". It's important to understand that these wildcards apply to individual characters - they have no notion of words.
+
+### Escaping
 
 What if you wanted to actually find a full stop, not use ``.`` as a wildcard? In this case, you need to put a backslash in front of it, to *escape* it:
 
@@ -110,13 +110,13 @@ This will find the phrase "terror.", but not "terrorism". When I write regular e
 
 ### Character groups and ranges
 
-You may notice that our "terror" search actually highlighted the entire rest of each matching line, not just the word "terrorism". That's because the ``.`` wildcard also matches spaces and other text signs. Instead, you may want to use the following search:
+You may notice that our "terror" search actually highlighted the entire rest of each matching line, not just the word "terrorism". That's because the ``.`` wildcard also matches spaces and punctuation. To get match only a single word, you may want to use the following instead:
 
 ```
 terror[a-z]*
 ```
 
-You can read the square brackets as "any of": find the text terror followed by any number of the lowercase letters between a and z. You can also put other characters into the square brackets:
+You can read the square brackets as "any of": find the text terror followed the lowercase letters between a and z. The asterisk still makes sure you'll match more than once character. You can also put other characters into the square brackets:
 
 ```
 +1-\([0-9]*\)-[0-9]*-[0-9]*
@@ -130,13 +130,13 @@ Let's refine this. Instead of allowing any number of numbers in the phone number
 +1-\([0-9]{3}\)-[0-9]{3}-[0-9]{3,5}
 ```
 
-The curly brackets say "find n matches": in the first two instances, I'm looking for exactly three numbers (``[0-9]{3}``), while the third example specifies a *range*: ``[0-9]{3,5}`` reads as "match any number between three to five digits".
+The curly brackets mean "find n matches": in the first two instances, I'm looking for exactly three numbers (``[0-9]{3}``), while the third example specifies a *range*: ``[0-9]{3,5}`` reads as "match any number that has between three to five digits".
 
 If you think this looks crazy: you ain't seen nothing yet.
 
 ### Meta-characters
 
-While the square brackets are quite useful, it can be cumbersome to write out ``[0-9]`` every time you want to find a number. Instead, you can also use some shorter aliases which mean the same thing: ``\d`` means any decimal, ``\w`` means any character that we'd expect inside a word (something like ``[A-Za-z0-9]``), and ``\s`` means anything similar to whitespace (including newlines). These are called meta-characters. Our phone number pattern could therefore look like this:
+While the square brackets are quite useful, it can be cumbersome to write out ``[0-9]`` every time you want to find a number. Instead, you can also use some shorter aliases that mean the same thing: ``\d`` means any decimal, ``\w`` means any character that we'd expect inside a word (something like ``[A-Za-z0-9]``), and ``\s`` means anything similar to whitespace (including newlines). These are called meta-characters. Our phone number pattern could therefore look like this:
 
 ```
 +1-\(\d{3}\)-\d{3}-\d{3,5}
