@@ -1,80 +1,83 @@
 ---
-keywords: Friedrich Lindenberg, pudo, open data, data journalism, grano, openspending, adhocracy
+keywords: Friedrich Lindenberg, pudo, open data, data journalism, alephdata, aleph, journalism
 ---
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{ page.title }} - pudo.org (Friedrich Lindenberg)</title>
-    <meta name="author" content="Friedrich Lindenberg" />
-    <meta name="description" content="{{page.description}}" />
-    <meta name="keywords" content="{{page.keywords}}" />
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
-    <link href="/assets/style/style.css" rel='stylesheet' type='text/css'>
+  <title>{{ page.title }} - pudo.org (Friedrich Lindenberg)</title>
+  <meta name="author" content="Friedrich Lindenberg" />
+  <meta name="description" content="{{page.description}}" />
+  <meta name="keywords" content="{{page.keywords}}" />
 
-    <!-- Beautification -->
-    <link rel="alternate" type="application/atom+xml" title="Follow Friedrich's blog posts."
-      href="http://pudo.org/atom.xml" />
-    <link rel="shortcut icon" href="http://assets.pudo.org/img/favicon.ico">
-  </head>
-  <body>
-    <div id="page">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-2">{% include menu.html %}</div>
-          <div class="col-md-10">{{ content }}</div>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700,800' rel='stylesheet'
+    type='text/css'>
+  <link href="/assets/style/style.css" rel='stylesheet' type='text/css'>
+
+  <!-- Beautification -->
+  <link rel="alternate" type="application/atom+xml" title="Follow Friedrich's blog posts."
+    href="https://pudo.org/atom.xml" />
+  <link rel="shortcut icon" href="https://assets.pudo.org/img/favicon.ico">
+</head>
+
+<body>
+  <div id="page">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2">{% include menu.html %}</div>
+        <div class="col-md-10">{{ content }}</div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="hidden-print">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-7 col-md-offset-2">
+          {% include bio.html %}
+        </div>
+        <div class="col-md-3">
+          <ul>
+            <li>
+              <a href="mailto:friedrich@pudo.org">
+                <i class="fa fa-envelope-square"></i>
+                friedrich@pudo.org
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/pudo">
+                <i class="fa fa-twitter-square"></i>
+                twitter.com/pudo
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/pudo">
+                <i class="fa fa-github-square"></i>
+                github.com/pudo
+              </a>
+            </li>
+            <li>
+              <a href="/about/key.gpg">
+                <i class="fa fa-key"></i>
+                GnuPG Key
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
+  </footer>
 
-    <footer class="hidden-print">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-7 col-md-offset-2">
-            {% include bio.html %}
-          </div>
-          <div class="col-md-3">
-            <ul>
-              <li>
-                <a href="mailto:friedrich@pudo.org">
-                  <i class="fa fa-envelope-square"></i>
-                  friedrich@pudo.org
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/pudo">
-                  <i class="fa fa-twitter-square"></i>
-                  twitter.com/pudo
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/pudo">
-                  <i class="fa fa-github-square"></i>
-                  github.com/pudo
-                </a>
-              </li>
-              <li>
-                <a href="/about/key.gpg">
-                  <i class="fa fa-key"></i>
-                  GnuPG Key
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  {% include ga.html %}
+</body>
 
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    {% include ga.html %}
-  </body>
 </html>
-
