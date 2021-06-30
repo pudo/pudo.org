@@ -20,6 +20,7 @@ keywords: Friedrich Lindenberg, pudo, open data, data journalism, alephdata, ale
       background: radial-gradient(circle, rgba(24,4,66,1) 16%, rgba(60,9,99,1) 58%);
       color: whitesmoke;
       line-height: 1.6;
+      font-size: 1.1em;
     }
 
     h1 {
@@ -49,17 +50,35 @@ keywords: Friedrich Lindenberg, pudo, open data, data journalism, alephdata, ale
     #container {
       max-width: 50em;
       padding: 1em;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    @media (orientation: landscape) {
+      #container {
+        flex-direction: row;
+      }
+      
+    }
+
+    @media (orientation: portrait) {
+      #container {
+        flex-direction: column;
+      }
+      
     }
 
     #selfie {
+      margin-right: 2em;
+      margin-bottom: 2em;
+    }
+
+    #selfie img {
       width: 10em;
       border-radius: 50%;
       border-color: whitesmoke;
       border-width: 2px;
       border-style: solid;
-      float: left;
-      margin-right: 2em;
-      margin-bottom: 2em;
     }
   </style>
 
