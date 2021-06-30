@@ -1,40 +1,132 @@
 ---
-layout: simple
 title: Friedrich Lindenberg
 description: >
     I'm a freelancer writing open source software. For the past
     decade, I've worked with investigative journalists and
     anti-corruption activists to build data-driven tools that
     support their work.
-keywords: investigations,data journalism,pudo,friedrich
+keywords: Friedrich Lindenberg, pudo, open data, data journalism, alephdata, aleph, journalism, investigations, followthemoney
 ---
 
-<div id="selfie">
-    <img src="https://assets.pudo.org/img/istanbul.jpeg" alt="Friedrich Lindenberg">
-</div>
+<!DOCTYPE html>
+<html>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<div id="card">
-    <h1>Friedrich Lindenberg (pudo)</h1>
+  <title>{{ page.title }}</title>
+  <meta name="author" content="Friedrich Lindenberg" />
+  <meta name="description" content="{{page.description}}" />
+  <meta name="keywords" content="{{page.keywords}}" />
+  <style>
+    body {
+      font-family: monospace;
+      background: rgb(24,4,66);
+      background: radial-gradient(circle, rgba(24,4,66,1) 16%, rgba(60,9,99,1) 58%);
+      color: whitesmoke;
+      line-height: 1.6;
+      font-size: 1.1em;
+    }
 
-    <p>{{ page.description }}</p>
+    h1 {
+      margin-top: 0;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
 
-    <p>
-        Recent projects:
-        <a href="https://opensanctions.org">opensanctions</a>
-        &middot;
-        <a href="https://docs.alephdata.org">aleph</a>
-        &middot;
-        <a href="https://dataset.rtfd.org">dataset</a>
-    </p>
+    a {
+      color: whitesmoke;
+    }
 
-    <p>
-        &lt;friedrich.lindenberg@gmail.com&gt;
-        &middot;
-        <a href="https://github.com/pudo">github</a>
-        &middot;
-        <a href="https://twitter.com/pudo">twitter</a>
-        &middot;
-        <a href="https://keys.openpgp.org/search?q=3B1C849E7ED7DB1A3BD1122EDDB59FD402D7B6B0">pgp</a>
-    </p>
-</div>
+    #page {
+      display: flex;
+      justify-content: center;
+      
+      min-height: 98vh;
+    }
+
+    @media (orientation: landscape) {
+      #page {
+        align-items: center;
+      }
+      
+    }
+
+    #container {
+      max-width: 50em;
+      /* padding: 1em; */
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    @media (orientation: landscape) {
+      #container {
+        flex-direction: row;
+      }
+      
+    }
+
+    @media (orientation: portrait) {
+      #container {
+        flex-direction: column;
+      }
+      
+    }
+
+    #selfie {
+      margin-right: 2em;
+      margin-bottom: 2em;
+    }
+
+    #selfie img {
+      width: 10em;
+      border-radius: 50%;
+      border-color: whitesmoke;
+      border-width: 2px;
+      border-style: solid;
+    }
+  </style>
+
+  <!-- Beautification -->
+  <link rel="shortcut icon" href="https://assets.pudo.org/img/favicon.ico">
+</head>
+
+<body>
+  <div id="page">
+    <div id="container">
+      <div id="selfie">
+        <img src="https://assets.pudo.org/img/istanbul.jpeg" alt="Friedrich Lindenberg">
+      </div>
+      
+      <div id="card">
+        <h1>Friedrich Lindenberg (pudo)</h1>
+    
+        <p>{{ page.description }}</p>
+    
+        <p>
+          Recent projects:
+          <a href="https://opensanctions.org">opensanctions</a>
+          &middot;
+          <a href="https://docs.alephdata.org">aleph</a>
+          &middot;
+          <a href="https://dataset.rtfd.org">dataset</a>
+        </p>
+    
+        <p>
+          &lt;friedrich@pudo.org&gt;
+          &middot;
+          <a href="https://github.com/pudo">github</a>
+          &middot;
+          <a href="https://twitter.com/pudo">twitter</a>
+          &middot;
+          <a href="https://keys.openpgp.org/search?q=3B1C849E7ED7DB1A3BD1122EDDB59FD402D7B6B0">pgp</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  {% include ga.html %}
+</body>
+
+</html>
+
