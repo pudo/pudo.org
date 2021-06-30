@@ -1,0 +1,83 @@
+---
+keywords: Friedrich Lindenberg, pudo, open data, data journalism, alephdata, aleph, journalism
+---
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{ page.title }}</title>
+  <meta name="author" content="Friedrich Lindenberg" />
+  <meta name="description" content="{{page.description}}" />
+  <meta name="keywords" content="{{page.keywords}}" />
+  <style>
+    body {
+      font-family: monospace;
+      /*
+      background: rgb(5,0,73);
+      background: radial-gradient(circle, rgba(5,0,73,1) 0%, rgba(12,12,106,1) 65%);
+      */
+      background: rgb(24,4,66);
+background: radial-gradient(circle, rgba(24,4,66,1) 16%, rgba(60,9,99,1) 58%);
+      color: whitesmoke;
+      line-height: 1.6;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    a {
+      color: whitesmoke;
+    }
+
+    #page {
+      display: flex;
+      justify-content: center;
+      
+      min-height: 98vh;
+    }
+
+    @media (orientation: landscape) {
+      #page {
+        align-items: center;
+      }
+      
+    }
+
+    #container {
+      max-width: 50em;
+      padding: 1em;
+    }
+
+    #selfie {
+      width: 10em;
+      border-radius: 50%;
+      border-color: whitesmoke;
+      border-width: 2px;
+      border-style: solid;
+      float: left;
+      margin-right: 2em;
+      margin-bottom: 2em;
+    }
+  </style>
+
+  <!-- Beautification -->
+  <link rel="shortcut icon" href="https://assets.pudo.org/img/favicon.ico">
+</head>
+
+<body>
+  <div id="page">
+    <div id="container">
+      {{ content }}
+    </div>
+  </div>
+  {% include ga.html %}
+</body>
+
+</html>

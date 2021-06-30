@@ -1,80 +1,27 @@
 ---
-layout: default
-title: Mining public data for journalism and advocacy
+layout: simple
+title: Friedrich Lindenberg
 description: >
-  Home page of Friedrich Lindenberg, a civic technologist working on effective
-  tools and methods for data-driven journalism and advocacy. Follow the blog,
-  or explore a wide variety of tools and platforms.
-home: true
+    I'm a freelance software developer and data wrangler working on tools
+    and methods for effective data journalism and public interest data
+    platforms.
+keywords: investigations,data journalism,pudo,friedrich
 ---
 
-<h1 class="page-banner">
-  Hi! I'm a civic technologist working on effective
-  tools and methods for data-driven journalism and advocacy.
-</h1>
+<img id="selfie" src="https://assets.pudo.org/img/istanbul.jpeg" alt="Friedrich Lindenberg">
 
-<div class="row">
-  <div class="col-md-8 col-sm-12">
-    {% for post in site.categories.blog limit:8 %}
-      {% include postlink.html post=post %}
-    {% endfor %}
-    <i class="fa fa-rss-square"></i> <a href="/atom.xml">Subscribe now</a> &middot;
-    <a href="/blog">See earlier posts &raquo;</a>
-  </div>
+<div id="card">
+    <h1>Friedrich Lindenberg</h1>
 
-  <div class="col-md-4 sidebar hidden-sm hidden-xs">
-    <h2 class="sub-banner">Useful resources</h2>
+    <p>{{ page.description }}</p>
 
-    <ul>
-      <li>
-        <strong>
-          <a href="/material/opennames">
-            An open database of PEPs and entities of interest
-          </a>
-        </strong>
-        <p>
-          What data-driven tools can investigative reporters use
-          to find and analyze the right evidence for their
-          stories?
-        </p>
-      </li>
-
-      <li>
-        <strong>
-          <a href="/material/investigative-tools">
-            Research Tools for Reporters
-          </a>
-        </strong>
-        <p>
-          What data-driven tools can investigative reporters use
-          to find and analyze the right evidence for their
-          stories?
-        </p>
-      </li>
-
-      <li>
-        <strong>
-          <a href="/material/checklist">
-            Civic Software Checklist
-          </a>
-        </strong>
-        <p>
-          Some advice for NGOs and news organisations that are
-          starting to develop software.
-        </p>
-      </li>
-
-      <li>
-        <strong>
-          <a href="/material/eu-spending">
-            How does the EU spend its money?
-          </a>
-        </strong>
-        <p>
-          An overview of the European Union's public spending
-          funds and the data sources covering them.
-        </p>
-      </li>
-    </ul>
-  </div>
+    <p>
+        &lt;friedrich.lindenberg@gmail.com&gt;
+        &middot;
+        <a href="https://github.com/pudo">github</a>
+        &middot;
+        <a href="https://twitter.com/pudo">twitter</a>
+        &middot;
+        <a href="https://keys.openpgp.org/search?q=3B1C849E7ED7DB1A3BD1122EDDB59FD402D7B6B0">gpg</a>
+    </p>
 </div>
